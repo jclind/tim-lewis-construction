@@ -20,7 +20,7 @@ const DefaultHero = ({
           <p className='hero-description'>{description}</p>
           {type === 'default' && (
             <div className={`${styles.background_image}`}>
-              <img src='/images/shared/default_hero_background.webp' alt='' />
+              <img src='/images/shared/waves_background.webp' alt='' />
             </div>
           )}
         </div>
