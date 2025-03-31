@@ -51,22 +51,22 @@ const Footer = () => {
             <img src='/images/logo.webp' alt='Deer Lakes Web Design Icon' />
           </div>
           <div className={styles.links_and_contact}>
-            <div className={styles.links}>
-              <div className={styles.column}>
-                <a href='/services' className={styles.highlighted}>
-                  Services
-                </a>
-                <a href='/pricing'>Pricing</a>
-                <a href='/projects'>Projects</a>
-              </div>
-              <div className={styles.column}>
-                <a href='/about' className={styles.highlighted}>
-                  About
-                </a>
-                <a href='/'>Home</a>
-                <a href='/contact'>Contact</a>
-              </div>
+            {/* <div className={styles.links}> */}
+            <div className={`${styles.column} ${styles.column1}`} id='links'>
+              <a href='/services' className={styles.highlighted}>
+                Services
+              </a>
+              <a href='/pricing'>Pricing</a>
+              <a href='/projects'>Projects</a>
             </div>
+            <div className={`${styles.column} ${styles.column2}`} id='links'>
+              <a href='/about' className={styles.highlighted}>
+                About
+              </a>
+              <a href='/'>Home</a>
+              <a href='/contact'>Contact</a>
+            </div>
+            {/* </div> */}
             <div className={styles.contact}>
               <div className={styles.highlighted}>Contact Info</div>
               <div className={styles.contact_items}>
