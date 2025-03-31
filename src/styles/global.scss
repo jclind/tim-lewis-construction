@@ -167,13 +167,19 @@ button,
   }
 }
 
+// image styling
+img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
 // Hero Styling
 .hero-page {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 100%;
   padding: $gap-2xl 0;
 }
 .hero-title {

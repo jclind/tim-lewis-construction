@@ -7,6 +7,9 @@ const Hero = () => {
       <div className='page__inner'>
         <div className={styles.content}>
           <h1 className='page-title'>This Is The Hero</h1>
+          <div className={styles.image}>
+            <img src='images/home/hero.webp' alt='' />
+          </div>
           <p className='section-paragraph'>
             This is the description for the hero Lorem ipsum dolor sit amet
             consectetur adipisicing elit. Illo, commodi.
