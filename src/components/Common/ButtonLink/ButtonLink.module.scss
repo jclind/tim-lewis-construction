@@ -3,7 +3,7 @@
 .button_link {
   min-width: 140px;
   width: fit-content !important;
-  padding: 0 $gap-small;
+  padding: $gap-regular $gap-large;
   height: 40px;
   white-space: nowrap;
   font-size: $fs-small;
@@ -16,8 +16,8 @@
     color: $primary-background;
   }
   &.secondary {
-    background: $primary-text;
-    color: $primary-background;
+    color: $primary-text;
+    background: $secondary-accent;
   }
   &.tertiary {
     background: $secondary-accent;

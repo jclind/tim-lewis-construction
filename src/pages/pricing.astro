@@ -3,6 +3,7 @@ import Layout from '../layouts/Layout.astro';
 import Hero from '../components/Pages/Home/Hero';
 import '../styles/global.scss';
 import DefaultHero from '../components/Layout/DefaultHero/DefaultHero';
+import PricingFactors from '../components/Pages/Pricing/PricingFactors';
 
 const heroData = {
   title: "How We Determine Pricing",
@@ -12,5 +13,5 @@ const heroData = {
 
 <Layout>
   <DefaultHero title={heroData.title} description={heroData.description} />
-  
+  <PricingFactors />
 </Layout>

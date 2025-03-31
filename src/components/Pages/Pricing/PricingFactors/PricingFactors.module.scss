@@ -1,0 +1,35 @@
+@use '../../../../styles/vars' as *;
+
+.PricingFactors {
+  padding: $gap-xl 0;
+  .content {
+    .text_content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    h2 {
+      color: $primary-accent;
+      font-size: $fs-medium;
+    }
+    .section {
+      display: flex;
+      flex-direction: column;
+      gap: $gap-medium;
+      padding-top: $gap-large;
+      ul {
+        display: inline-block; // list-style-position: inside;
+        margin-left: 1em;
+
+        li {
+          max-width: 100%;
+          width: 100%;
+          margin-bottom: $gap-regular;
+        }
+      }
+    }
+    .section:last-of-type {
+      padding-bottom: $gap-xl;
+    }
+  }
+}
