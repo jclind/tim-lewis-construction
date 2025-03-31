@@ -1,13 +1,19 @@
 // =============================================
 // Colors
 // =============================================
-$primary-text: #181818; // Primary text color
+
+:root {
+  --primary-text: #181818;
+  --primary-accent: #266c6c;
+  --secondary-accent: #d0ea33;
+}
+$primary-text: var(--primary-text); // Primary text color
 $secondary-text: #313131; // Secondary text color
 $secondary-header: #737373; // Secondary header color
 $primary-background: #f7f7f7; // Primary background color
 $secondary-background: #eaeaea; // Secondary background color
-$primary-accent: #266c6c; // Primary accent color
-$secondary-accent: #d0ea33; // Secondary accent color
+$primary-accent: var(--primary-accent); // Primary accent color
+$secondary-accent: var(--secondary-accent); // Secondary accent color
 $white: #ffffff;
 
 $border-color: #e2e2e2; // Default border color
