@@ -7,7 +7,7 @@ const PricingFactors = () => {
     <div className={styles.PricingFactors}>
       <div className='page__inner'>
         <div className={styles.content}>
-          <div className='image'>
+          <div className={`image ${styles.image}`}>
             <img src='/images/pricing/pricing.webp' alt='' />
           </div>
           <div className={styles.text_content}>
