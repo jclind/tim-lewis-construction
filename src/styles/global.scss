@@ -183,10 +183,14 @@ img {
   padding: $gap-2xl 0;
 }
 .hero-title {
-  font-size: $fs-xlarge;
+  font-size: $fs-large;
   font-weight: 700;
   text-align: center;
   margin-bottom: $gap-medium;
+
+  @media (min-width: 700px) {
+    font-size: $fs-xlarge;
+  }
 }
 .hero-description {
   font-size: $fs-regular;

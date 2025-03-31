@@ -2,13 +2,15 @@
 import Layout from '../layouts/Layout.astro';
 import Hero from '../components/Pages/Home/Hero';
 import '../styles/global.scss';
+import DefaultHero from '../components/Layout/DefaultHero/DefaultHero';
 
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+const heroData = {
+  title: "How We Determine Pricing",
+  description: "Every renovation is unique, which is why we tailor our pricing to fit your specific project. Factors like size, materials, and customization all play a role in the final cost. Reach out today for a personalized estimate.",
+};
 ---
 
 <Layout>
-  <Hero />
+  <DefaultHero title={heroData.title} description={heroData.description} />
   
 </Layout>
