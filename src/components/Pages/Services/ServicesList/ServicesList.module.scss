@@ -1,0 +1,21 @@
+@use '../../../../styles/vars' as *;
+
+.ServicesList {
+  .content {
+    .list {
+      display: flex;
+      flex-direction: column;
+      gap: $gap-large;
+      .service {
+        h2 {
+          font-size: $fs-medium;
+          margin: $gap-regular 0;
+        }
+        p {
+          text-align: left;
+          margin-bottom: $gap-medium;
+        }
+      }
+    }
+  }
+}

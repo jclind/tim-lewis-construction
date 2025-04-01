@@ -3,6 +3,7 @@ import Layout from '../layouts/Layout.astro';
 import Hero from '../components/Pages/Home/Hero';
 import '../styles/global.scss';
 import DefaultHero from '../components/Layout/DefaultHero';
+import ServicesList from '../components/Pages/Services/ServicesList';
 
 
 const heroData = {
@@ -16,5 +17,6 @@ const heroData = {
     title={heroData.title}
     description={heroData.description}
   />
+  <ServicesList />
   
 </Layout>
