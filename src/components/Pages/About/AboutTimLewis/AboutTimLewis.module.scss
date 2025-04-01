@@ -1,1 +1,48 @@
 @use '../../../../styles/vars' as *;
+
+.AboutTimLewis {
+  .content {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: $gap-xl;
+
+    .image {
+      max-width: 530px;
+    }
+
+    .text_section {
+      margin-top: $gap-large;
+      h1 {
+        margin-bottom: $gap-regular;
+        text-align: left;
+      }
+      p {
+        text-align: left;
+      }
+      .list {
+        display: flex;
+        flex-direction: column;
+        margin-top: $gap-large;
+        gap: $gap-large;
+        .item {
+          display: flex;
+          gap: $gap-regular;
+          .icon_container {
+            margin-top: 5px;
+          }
+          .text_container {
+            display: flex;
+            flex-direction: column;
+            gap: $gap-small;
+            h2 {
+              font-size: $fs-medium;
+            }
+            p {
+              font-size: $fs-regular;
+            }
+          }
+        }
+      }
+    }
+  }
+}
