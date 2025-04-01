@@ -49,7 +49,10 @@ const Footer = () => {
         <div className={styles.content}>
           <div className={styles.top}>
             <div className={styles.logo_container}>
-              <img src='/images/logo.webp' alt='Deer Lakes Web Design Icon' />
+              <img
+                src='/images/logo_inverted.webp'
+                alt='Deer Lakes Web Design Icon'
+              />
             </div>
             <div className={`${styles.column} ${styles.column1}`} id='links'>
               <a href='/services' className={styles.highlighted}>
