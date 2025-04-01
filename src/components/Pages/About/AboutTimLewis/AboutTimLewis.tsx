@@ -12,7 +12,7 @@ const valuesList = [
     text: 'As a local contractor, Tim understands the unique needs of homeowners in the area. His mission? To deliver beautiful, functional spaces that stand the test of time—whether it’s a deck built for family gatherings or a bathroom designed for relaxation.',
   },
   {
-    title: 'A Craftsman at Heart',
+    title: 'The TLC Difference',
     text: 'Tim believes that every home deserves tender loving care. That’s why he approaches each project with precision, integrity, and a genuine commitment to customer satisfaction.',
   },
 ]
