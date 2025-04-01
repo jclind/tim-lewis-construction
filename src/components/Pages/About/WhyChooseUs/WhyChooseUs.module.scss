@@ -1,0 +1,47 @@
+@use '../../../../styles/vars' as *;
+
+.WhyChooseUs {
+  background: $primary-accent;
+  padding: $gap-xl 0;
+
+  .content {
+    h1 {
+      margin-bottom: $gap-large;
+    }
+    .values {
+      background: $white;
+      border-radius: $border-radius;
+      .value {
+        display: flex;
+        flex-direction: column;
+        gap: $gap-medium;
+        padding: $gap-medium;
+        border-bottom: 1px solid $border-color;
+
+        &:last-of-type {
+          border-bottom: none;
+        }
+
+        .icon_container {
+          display: flex;
+          justify-content: center;
+
+          align-items: center;
+          height: 45px;
+          width: 45px;
+          background: $primary-accent;
+          border-radius: 50%;
+          color: $white;
+        }
+        h2 {
+          font-size: $fs-medium;
+          font-weight: 500;
+        }
+        p {
+          color: $secondary-text;
+          font-size: $fs-small;
+        }
+      }
+    }
+  }
+}
