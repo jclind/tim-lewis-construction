@@ -22,17 +22,22 @@
         object-fit: contain;
       }
     }
-    .links_and_contact {
+    .top {
       display: grid;
       grid-template-columns: 1fr 1fr;
       row-gap: $gap-large;
       margin-top: $gap-large;
+      align-items: flex-start;
       grid-template-areas:
+        'logo logo'
         'column1 column2'
         'contact contact';
       width: 100%;
       // .links {
       // display: flex;
+      .logo_container {
+        grid-area: logo;
+      }
       .column {
         display: flex;
         flex-direction: column;
@@ -75,6 +80,12 @@
       width: 100%;
       gap: $gap-small;
 
+      .left {
+        display: flex;
+        flex-direction: column;
+        gap: $gap-small;
+      }
+
       p,
       div,
       a {
@@ -89,16 +100,41 @@
       a {
         text-decoration: underline;
       }
+
+      @media (min-width: 800px) {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        width: 100%;
+        p,
+        div,
+        a {
+          text-align: left;
+        }
+      }
     }
 
     @media (min-width: 600px) {
-      .links_and_contact {
-        flex-direction: row;
-        justify-content: space-between;
-        gap: $gap-regular;
+      .top {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas:
+          'logo logo logo'
+          'column1 column2 contact';
+        // display: flex;
+        // flex-direction: row;
+        // justify-content: space-between;
+        // gap: $gap-regular;
         .links {
           min-width: 50%;
         }
+      }
+    }
+    @media (min-width: 900px) {
+      .top {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
       }
     }
   }

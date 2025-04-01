@@ -47,11 +47,10 @@ const Footer = () => {
     <footer className={styles.footer}>
       <div className='page__inner'>
         <div className={styles.content}>
-          <div className={styles.logo_container}>
-            <img src='/images/logo.webp' alt='Deer Lakes Web Design Icon' />
-          </div>
-          <div className={styles.links_and_contact}>
-            {/* <div className={styles.links}> */}
+          <div className={styles.top}>
+            <div className={styles.logo_container}>
+              <img src='/images/logo.webp' alt='Deer Lakes Web Design Icon' />
+            </div>
             <div className={`${styles.column} ${styles.column1}`} id='links'>
               <a href='/services' className={styles.highlighted}>
                 Services
@@ -66,7 +65,6 @@ const Footer = () => {
               <a href='/'>Home</a>
               <a href='/contact'>Contact</a>
             </div>
-            {/* </div> */}
             <div className={styles.contact}>
               <div className={styles.highlighted}>Contact Info</div>
               <div className={styles.contact_items}>
@@ -76,25 +74,30 @@ const Footer = () => {
               </div>
             </div>
           </div>
+
           <Divider space='large' />
           <div className={styles.bottom}>
-            <p>
-              © {new Date().getFullYear()} Tim Lewis Construction,{' '}
-              <a href='https://hicsearch.attorneygeneral.gov/'>
-                Licensed and Insured.
-              </a>
-            </p>
-            <div>
-              <a href='/terms-of-service'>Terms</a>
-              <span>|</span>
-              <a href='/privacy-policy'>Privacy</a>
+            <div className={styles.left}>
+              <p>
+                © {new Date().getFullYear()} Tim Lewis Construction,{' '}
+                <a href='https://hicsearch.attorneygeneral.gov/'>
+                  Licensed and Insured.
+                </a>
+              </p>
+              <div>
+                <a href='/terms-of-service'>Terms</a>
+                <span>|</span>
+                <a href='/privacy-policy'>Privacy</a>
+              </div>
             </div>
-            <p>
-              Designed And Developed By{' '}
-              <a href='https://deerlakeswebdesigns.com/'>
-                Deer Lakes Web Design
-              </a>
-            </p>
+            <div className={styles.right}>
+              <p>
+                Designed And Developed By{' '}
+                <a href='https://deerlakeswebdesigns.com/'>
+                  Deer Lakes Web Design
+                </a>
+              </p>
+            </div>
           </div>
         </div>
 

@@ -1,4 +1,4 @@
-export const EMAIL_ADDRESS = 'placeholder@gmail.com'
+export const EMAIL_ADDRESS = 'constructioncellist@gmail.com '
 export const PHONE_NUMBER = '+18888888888'
 export const ADDRESS = '123 test dr'
 export const CITY = 'Sample'
