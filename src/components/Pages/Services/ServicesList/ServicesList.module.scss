@@ -1,19 +1,68 @@
 @use '../../../../styles/vars' as *;
 
 .ServicesList {
+  padding: $gap-large 0;
   .content {
     .list {
       display: flex;
       flex-direction: column;
       gap: $gap-large;
       .service {
-        h2 {
-          font-size: $fs-medium;
-          margin: $gap-regular 0;
+        .image {
+          border-radius: $border-radius;
+          overflow: hidden;
+          max-width: 300px;
         }
-        p {
-          text-align: left;
-          margin-bottom: $gap-medium;
+        .text_content {
+          max-width: 400px;
+          h2 {
+            font-size: $fs-medium;
+            margin: $gap-regular 0;
+          }
+          p {
+            text-align: left;
+            margin-bottom: $gap-medium;
+          }
+        }
+      }
+    }
+  }
+  @media (min-width: 800px) {
+    .content {
+      .list {
+        .service {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          max-width: 100%;
+          gap: $gap-large;
+
+          .image {
+            width: 50%;
+          }
+          .text_content {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            h2 {
+              margin-top: 0;
+            }
+
+            .button_container {
+              margin-top: $gap-large;
+              max-width: 175px;
+            }
+          }
+        }
+      }
+    }
+  }
+  @media (min-width: 1000px) {
+    .content {
+      .list {
+        .service {
+          gap: $gap-xl;
+          padding: $gap-medium $gap-large;
         }
       }
     }
