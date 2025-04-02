@@ -9,14 +9,19 @@
       margin-bottom: $gap-large;
     }
     .values {
-      background: $white;
+      display: flex;
+      flex-direction: column;
       border-radius: $border-radius;
+      overflow: hidden;
+      background: $border-color !important;
+      gap: 1px;
       .value {
         display: flex;
         flex-direction: column;
         gap: $gap-medium;
         padding: $gap-medium;
-        border-bottom: 1px solid $border-color;
+        max-width: 350px;
+        background: $white;
 
         &:last-of-type {
           border-bottom: none;
@@ -40,6 +45,22 @@
         p {
           color: $secondary-text;
           font-size: $fs-small;
+        }
+      }
+    }
+    @media (min-width: 800px) {
+      .values {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+    @media (min-width: 1100px) {
+      .values {
+        grid-template-columns: repeat(3, 1fr);
+
+        .value {
+          border: 0;
+          background: $white;
         }
       }
     }
