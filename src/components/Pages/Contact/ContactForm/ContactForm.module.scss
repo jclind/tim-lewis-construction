@@ -1,0 +1,65 @@
+@use '../../../../styles/vars' as *;
+
+.ContactForm {
+  margin: $gap-xl 0;
+  .content {
+    .image {
+    }
+    .form_container {
+      padding-top: $gap-medium;
+      h1,
+      p {
+        text-align: left;
+      }
+      p {
+        margin: $gap-medium 0;
+      }
+      a {
+        color: $primary-accent;
+        font-weight: 500;
+      }
+    }
+  }
+}
+
+.form_container {
+  width: 100%;
+  max-width: 450px;
+
+  .contact_form {
+    label {
+      display: flex;
+      flex-direction: column;
+      font-size: $fs-small;
+      font-weight: 500;
+      margin-bottom: $gap-regular;
+      input,
+      textarea {
+        margin-top: $gap-tiny;
+        height: 40px;
+        width: 100%;
+        border-radius: $border-radius;
+        border: 1px solid $border-color;
+        outline-color: $primary-accent;
+        outline-offset: -1px;
+        padding: 0 $gap-regular;
+        color: $primary-text;
+        background: $primary-background;
+      }
+      textarea {
+        padding: $gap-regular;
+        min-height: 100px;
+      }
+    }
+    button {
+      background: $primary-accent;
+      color: $primary-background;
+      font-size: $fs-regular;
+      font-weight: 700;
+      width: 100%;
+      height: 40px;
+      border-radius: $border-radius;
+      margin-top: $gap-large;
+    }
+  }
+}
