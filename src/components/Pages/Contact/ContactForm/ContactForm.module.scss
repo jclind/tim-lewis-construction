@@ -3,9 +3,15 @@
 .ContactForm {
   margin: $gap-xl 0;
   .content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
     .image {
+      max-width: 450px;
     }
-    .form_container {
+    .form_content {
       padding-top: $gap-medium;
       h1,
       p {
@@ -18,6 +24,50 @@
         color: $primary-accent;
         font-weight: 500;
       }
+    }
+  }
+
+  @media (min-width: 800px) {
+    .content {
+      flex-direction: row;
+      align-items: stretch;
+      gap: $gap-large;
+      height: max-content;
+      .image {
+        display: flex;
+        align-items: flex-start;
+        width: 50%;
+        max-width: 600px;
+        img {
+          width: 100%;
+          height: fit-content;
+          object-fit: contain;
+        }
+      }
+      .form_content {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        max-width: 50%;
+
+        p {
+          // margin-bottom: $gap-large;
+        }
+      }
+      .form_container {
+        max-width: 100%;
+        width: 100%;
+        margin-top: auto;
+      }
+    }
+  }
+  @media (min-width: 900px) {
+    .content {
+      justify-content: flex-start;
+      gap: $gap-xl;
     }
   }
 }
@@ -52,14 +102,29 @@
       }
     }
     button {
-      background: $primary-accent;
-      color: $primary-background;
+      background: $secondary-accent;
+      color: $primary-text;
       font-size: $fs-regular;
       font-weight: 700;
       width: 100%;
-      height: 40px;
+      height: 48px;
       border-radius: $border-radius;
       margin-top: $gap-large;
+    }
+  }
+
+  @media (min-width: 1000px) {
+    .contact_form {
+      .names {
+        display: flex;
+        width: 100%;
+        gap: $gap-medium;
+        margin: 0;
+        padding: 0;
+        label {
+          width: 100%;
+        }
+      }
     }
   }
 }

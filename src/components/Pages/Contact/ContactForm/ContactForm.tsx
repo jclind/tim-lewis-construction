@@ -8,13 +8,13 @@ const ContactForm = () => {
     <div className={styles.ContactForm}>
       <div className='page__inner'>
         <div className={styles.content}>
-          <div className={`${styles.image} image`}>
+          <div className={`${styles.image} `}>
             <img
               src='/images/contact/contact.webp'
               alt='hand holding TLC business card in finished bathroom'
             />
           </div>
-          <div className={styles.form_container}>
+          <div className={styles.form_content}>
             <h1 className='page-title'>Let's Get In Touch</h1>
             <p>
               Or reach out manually to{' '}

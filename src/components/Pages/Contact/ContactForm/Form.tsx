@@ -56,27 +56,28 @@ const ContactForm = () => {
         </label>
       </p>
 
-      <label>
-        First Name *
-        <input
-          type='text'
-          name='firstName'
-          placeholder='First Name'
-          required
-          onChange={handleChange}
-        />
-      </label>
-      <label>
-        Last Name *
-        <input
-          type='text'
-          name='lastName'
-          placeholder='Last Name'
-          required
-          onChange={handleChange}
-        />
-      </label>
-
+      <div className={styles.names}>
+        <label>
+          First Name *
+          <input
+            type='text'
+            name='firstName'
+            placeholder='First Name'
+            required
+            onChange={handleChange}
+          />
+        </label>
+        <label>
+          Last Name *
+          <input
+            type='text'
+            name='lastName'
+            placeholder='Last Name'
+            required
+            onChange={handleChange}
+          />
+        </label>
+      </div>
       <label>
         Email *
         <input
