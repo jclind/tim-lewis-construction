@@ -11,7 +11,7 @@ const ContactForm = () => {
           <div className={`${styles.image} `}>
             <img
               src='/images/contact/contact.webp'
-              alt='hand holding TLC business card in finished bathroom'
+              alt='A hand holding TLC business card in finished bathroom.'
             />
           </div>
           <div className={styles.form_content}>

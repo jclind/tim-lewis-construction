@@ -1,0 +1,55 @@
+@use '../../../../styles/vars' as *;
+
+.ContactOptions {
+  padding: $gap-xl 0;
+  // background: red;
+  .content {
+    .header {
+      display: flex;
+      flex-direction: column;
+      gap: $gap-medium;
+      h1,
+      p {
+        text-align: left;
+      }
+    }
+    .options {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      gap: $gap-medium;
+      margin-top: $gap-large;
+
+      width: 100%;
+
+      .option {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: $gap-medium;
+
+        .icon {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 50px;
+          width: 50px;
+          border-radius: 50%;
+          background: $secondary-background;
+          color: $primary-accent;
+        }
+        h2 {
+          font-size: $fs-medium;
+          font-weight: 500;
+        }
+        a {
+          color: $primary-accent;
+          font-weight: 500;
+          font-size: $fs-small;
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
