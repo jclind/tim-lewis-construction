@@ -126,9 +126,6 @@ button,
   font-weight: 700;
   text-align: center;
   color: $secondary-text;
-  @media (min-width: $breakpoint-md) {
-    font-size: $fs-large;
-  }
 }
 .section-paragraph {
   font-size: $fs-regular;
