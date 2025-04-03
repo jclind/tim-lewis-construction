@@ -1,1 +1,61 @@
 @use '../../../../styles/vars' as *;
+
+.RenovationProcess {
+  margin: $gap-xl 0;
+  .content {
+    .header {
+      padding-bottom: $gap-medium;
+      border-bottom: 1px solid $primary-accent;
+      margin-bottom: $gap-large;
+      .title_container {
+        display: flex;
+        flex-direction: column;
+        gap: $gap-regular;
+
+        margin-bottom: $gap-medium;
+
+        h2,
+        h1 {
+          text-align: left;
+        }
+      }
+      .description {
+      }
+    }
+    .steps {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      width: 100%;
+      gap: $gap-medium;
+
+      .step {
+        background: $primary-accent;
+        color: $white;
+        max-width: 350px;
+        .step_number {
+          width: fit-content;
+          padding: 4px $gap-small;
+          border: 1px solid $white;
+          border-radius: 8px;
+          font-weight: 600;
+          font-size: $fs-small;
+        }
+        .step_content {
+          display: flex;
+          flex-direction: column;
+          gap: $gap-regular;
+          margin-top: $gap-xl;
+          h3,
+          p {
+            text-align: left;
+          }
+          h3 {
+            min-height: 46px;
+            font-size: $fs-medium;
+          }
+        }
+      }
+    }
+  }
+}
