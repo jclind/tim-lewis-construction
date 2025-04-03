@@ -1,6 +1,7 @@
 @use '../../../styles/vars' as *;
 
 .Testimonials {
+  margin-bottom: $gap-large;
   .content {
     margin-top: $gap-large;
     .top {
