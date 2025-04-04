@@ -4,6 +4,7 @@
   margin-bottom: $gap-large;
   .content {
     margin-top: $gap-large;
+    width: 100%;
     .top {
       display: flex;
       flex-direction: column;
@@ -25,6 +26,15 @@
       justify-content: center;
       gap: $gap-large;
       margin: $gap-xl 0;
+    }
+  }
+  @media (min-width: 1200px) {
+    .content {
+      .testimonials_list {
+        justify-content: space-between;
+        // gap: 0;
+        width: 100%;
+      }
     }
   }
 }
