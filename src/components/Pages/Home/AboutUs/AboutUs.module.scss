@@ -28,7 +28,7 @@
       font-weight: 400;
     }
     .why_choose_us_text {
-      margin-bottom: $gap-large;
+      margin-bottom: $gap-xl;
     }
     .values {
       padding-top: $gap-medium;
@@ -40,7 +40,7 @@
         gap: $gap-regular;
 
         h2 {
-          font-size: $fs-medium;
+          font-size: $fs-regular;
           margin-bottom: $gap-tiny;
         }
         p {
@@ -48,6 +48,38 @@
           font-weight: 400;
           color: $secondary-background;
         }
+      }
+    }
+  }
+
+  @media (min-width: 900px) {
+    .content {
+      display: flex;
+      gap: $gap-large;
+      align-items: stretch;
+      height: max-content;
+      .image {
+        display: block;
+        max-width: 50%;
+        img {
+          height: 100% !important;
+          object-fit: cover;
+        }
+      }
+      .about_us_text {
+      }
+    }
+  }
+  @media (min-width: 1000px) {
+    .content {
+      display: flex;
+      gap: $gap-xl;
+      .image {
+        display: block;
+        max-width: 50%;
+      }
+      .text_content {
+        min-width: 50%;
       }
     }
   }
