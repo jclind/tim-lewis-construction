@@ -107,12 +107,11 @@ $navbar-height-mobile: 70px;
   }
   .hamburger {
     display: none;
-    background: $primary-accent;
+    background: $secondary-accent;
     border-radius: 10px;
-    padding: 2px;
-    color: $primary-background;
+    color: $primary-text;
     @media (max-width: $breakpoint-lg) {
-      display: block;
+      display: flex;
     }
   }
 
