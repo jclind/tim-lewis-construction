@@ -18,7 +18,7 @@ const contactOptionsList = [
   },
   {
     icon: Facebook,
-    title: 'Check Out Our Facebook',
+    title: 'Visit Our Facebook',
     linkSrc: 'https://www.facebook.com/profile.php?id=61560594282818',
     linkText: 'Our Facebook Page',
   },
