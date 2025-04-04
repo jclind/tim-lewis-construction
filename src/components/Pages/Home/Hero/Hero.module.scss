@@ -1,14 +1,39 @@
 @use '../../../../styles/vars' as *;
 
 .hero {
+  position: relative;
+  padding-top: $gap-xl;
+  overflow: hidden;
+  border-bottom: 2px solid $primary-accent;
+  padding-bottom: $gap-2xl;
+
   .content {
     display: flex;
     flex-direction: column;
     gap: $gap-large;
-    .buttons {
+    .title_text {
       display: flex;
-      gap: $gap-large;
-      margin: 0 auto;
+      flex-direction: column;
+      gap: $gap-regular;
     }
+    .image {
+      border-radius: $border-radius;
+      overflow: hidden;
+    }
+
+    .bottom_text {
+      display: flex;
+      flex-direction: column;
+      gap: $gap-xl;
+      align-items: center;
+      p {
+        text-align: center;
+      }
+    }
+  }
+  .background_image {
+    position: absolute;
+    top: 30%;
+    z-index: -1;
   }
 }
