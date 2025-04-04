@@ -4,7 +4,7 @@ import { ButtonLink } from '../../../Common/ButtonLink'
 const Hero = () => {
   return (
     <div className={`${styles.hero}`}>
-      <div className='page__inner'>
+      <div className={`${styles.page__inner} page__inner`}>
         <div className={styles.content}>
           <div className={styles.title_text}>
             <h1 className='section-subtitle'>“IT JUST NEEDS SOME TLC”</h1>
@@ -34,7 +34,13 @@ const Hero = () => {
           </div>
         </div>
         <div className={styles.background_image}>
-          <img src='/images/home/hero_background.webp' alt='' />
+          <img
+            srcSet='/images/home/hero_background_mobile.webp 1000w, 
+          /images/home/hero_background_desktop.webp 1920w'
+            sizes='(max-width: 1000px) 100vw, 1920px'
+            src='/images/home/hero_background_desktop.webp'
+            alt='Hero Background'
+          />
         </div>
       </div>
     </div>

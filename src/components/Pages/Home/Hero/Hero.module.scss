@@ -1,11 +1,14 @@
 @use '../../../../styles/vars' as *;
 
 .hero {
+  height: 100%;
   position: relative;
   padding-top: $gap-xl;
   overflow: hidden;
-  border-bottom: 2px solid $primary-accent;
   padding-bottom: $gap-2xl;
+  margin: 0;
+  border-bottom: 2px solid $primary-accent;
+  height: fit-content;
 
   .content {
     display: flex;
@@ -19,6 +22,7 @@
     .image {
       border-radius: $border-radius;
       overflow: hidden;
+      max-width: 900px;
     }
 
     .bottom_text {
@@ -35,5 +39,54 @@
     position: absolute;
     top: 30%;
     z-index: -1;
+    width: 115%;
+  }
+
+  @media (min-width: 1000px) {
+    .content {
+      display: flex;
+      width: 50%;
+      margin-right: auto;
+      justify-content: center;
+      height: 475px;
+
+      .title_text {
+        margin-bottom: $gap-large;
+        gap: $gap-large;
+      }
+
+      h1,
+      h2,
+      p {
+        text-align: left !important;
+      }
+
+      .image {
+        position: absolute;
+        right: 0;
+        width: 45%;
+      }
+      .bottom_text {
+        align-items: flex-start;
+      }
+    }
+    .background_image {
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      img {
+        height: 100%;
+        object-fit: fill;
+      }
+    }
+  }
+  @media (min-width: 1200px) {
+    padding-top: $gap-2xl;
+    .content {
+      .image {
+        right: 50px;
+      }
+    }
   }
 }
