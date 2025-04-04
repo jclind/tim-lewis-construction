@@ -10,7 +10,7 @@ const ContactForm = () => {
         <div className={styles.content}>
           <div className={`${styles.image} `}>
             <img
-              src='/images/contact/contact.webp'
+              src='/images/shared/tlc_card.webp'
               alt='A hand holding TLC business card in finished bathroom.'
             />
           </div>
