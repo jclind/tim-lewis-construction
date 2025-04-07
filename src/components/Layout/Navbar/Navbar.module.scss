@@ -2,10 +2,9 @@
 
 @use '../../../styles/vars' as *;
 
-$navbar-height-desktop: 90px;
-$navbar-height-mobile: 70px;
-
 .navbar {
+  position: fixed;
+  top: 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -17,7 +16,8 @@ $navbar-height-mobile: 70px;
   background: $primary-background;
   width: 100%;
   border-bottom: 1px solid $border-color;
-  position: relative;
+  background: $primary-background;
+  z-index: 10;
   .inner {
     display: flex;
     justify-content: space-between;
