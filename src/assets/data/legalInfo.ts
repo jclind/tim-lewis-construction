@@ -1,5 +1,5 @@
-export const EMAIL_ADDRESS = 'constructioncellist@gmail.com '
-export const PHONE_NUMBER = '+18888888888'
+export const EMAIL_ADDRESS = 'constructioncellist@gmail.com'
+export const PHONE_NUMBER = '+14129775587'
 export const ADDRESS = '123 test dr'
 export const CITY = 'Sample'
 export const STATE = 'State'

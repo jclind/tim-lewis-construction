@@ -1,0 +1,20 @@
+@use '../../../../styles/vars' as *;
+
+.TermsOfServiceContent {
+  padding: $gap-xl 0;
+  .content {
+    h1 {
+      margin-bottom: $gap-large;
+    }
+    h2 {
+      margin: $gap-medium 0;
+    }
+    .date {
+      margin-bottom: $gap-large;
+    }
+    p {
+      text-align: left;
+      margin-bottom: $gap-regular;
+    }
+  }
+}
