@@ -4,7 +4,7 @@ export const projectsList = [
     title: 'Deck Addition',
     imgSrc: '/images/projects/project-img.webp',
     imgAlt: 'Wooden deck addition on a backyard home',
-    isFeatured: true,
+    isFeatured: false,
   },
   {
     id: '12d3f85f-7e33-4ef6-b709-8d1f59dfc8c9',
