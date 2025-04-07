@@ -1,0 +1,24 @@
+---
+import CallToAction from "../../components/Layout/CallToAction";
+import Layout from "../../layouts/Layout.astro";
+import '../../styles/global.scss';
+import { projectsData } from "../../assets/data/projects";
+
+export async function getStaticPaths() {
+  return projectsData.map((project) => ({
+    params: { slug: project.id }, // Generate a page for each project
+  }));
+}
+
+const { slug } = Astro.params;
+const project = projectsData.find((p) => p.id === slug);
+
+if (!project) {
+  throw new Error(`Project not found: ${slug}`);
+}
+---
+
+<Layout>
+  {project.title}
+  <CallToAction />
+</Layout>
