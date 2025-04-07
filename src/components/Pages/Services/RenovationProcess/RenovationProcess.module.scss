@@ -13,13 +13,26 @@
         gap: $gap-regular;
 
         margin-bottom: $gap-medium;
-
-        h2,
-        h1 {
-          text-align: left;
-        }
+      }
+      h2,
+      h1,
+      p {
+        text-align: left;
       }
       .description {
+      }
+      @media (min-width: 800px) {
+        display: flex;
+        border: none;
+        gap: $gap-large;
+        align-items: center;
+        .title_container {
+          border-right: 1px solid $primary-accent;
+          padding: 0;
+          margin: 0;
+          padding-right: $gap-large;
+          min-width: 50%;
+        }
       }
     }
     .steps {
@@ -58,21 +71,6 @@
       }
     }
 
-    @media (min-width: 800px) {
-      .header {
-        display: flex;
-        border: none;
-        gap: $gap-large;
-        align-items: center;
-        .title_container {
-          border-right: 1px solid $primary-accent;
-          padding: 0;
-          margin: 0;
-          padding-right: $gap-large;
-          min-width: 50%;
-        }
-      }
-    }
     @media (min-width: 850px) {
       .steps {
         .step {
