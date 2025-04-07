@@ -2,6 +2,7 @@ import React from 'react'
 import styles from './OurPortfolio.module.scss'
 import { getFeaturedProjects } from '../../../../assets/data/projects'
 import { ArrowUpRight } from 'lucide-react'
+import { ButtonLink } from '../../../Common/ButtonLink'
 
 const OurPortfolio = () => {
   return (
@@ -33,6 +34,11 @@ const OurPortfolio = () => {
               </div>
             ))}
           </div>
+          <ButtonLink
+            text='View All Projects'
+            link='/projects'
+            color='secondary'
+          />
         </div>
       </div>
     </div>

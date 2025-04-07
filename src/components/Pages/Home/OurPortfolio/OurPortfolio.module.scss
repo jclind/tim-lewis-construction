@@ -3,6 +3,9 @@
 .OurPortfolio {
   margin: $gap-xl 0;
   .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     .header {
       padding-bottom: $gap-large;
       border-bottom: 1px solid $primary-accent;
@@ -41,6 +44,7 @@
       flex-wrap: wrap;
       justify-content: center;
       gap: $gap-large;
+      margin-bottom: $gap-xl;
       .project {
         position: relative;
         display: flex;
