@@ -15,7 +15,7 @@ const Services = () => {
             Want to see everything that we offer?
           </p>
           <ButtonLink
-            link='services'
+            link='/services'
             text='View All Services'
             color='secondary'
           />

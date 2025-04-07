@@ -14,7 +14,11 @@ const CallToAction = () => {
             Let Tim Lewis Construction bring your vision to life with expert
             craftsmanship and care.
           </p>
-          <ButtonLink text='Contact Us Today' link='contact' color='tertiary' />
+          <ButtonLink
+            text='Contact Us Today'
+            link='/contact'
+            color='tertiary'
+          />
           <div className={styles.background_image}>
             <img src='/images/shared/waves_background.webp' alt='' />
           </div>
