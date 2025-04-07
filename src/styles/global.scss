@@ -27,6 +27,10 @@ body {
   background-color: $primary-background;
   width: 100%;
   margin: 0 auto;
+  margin-top: $navbar-height-desktop;
+  @media (max-width: $breakpoint-lg) {
+    margin-top: $navbar-height-mobile;
+  }
 }
 
 p,
