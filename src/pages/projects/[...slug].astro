@@ -3,6 +3,7 @@ import CallToAction from "../../components/Layout/CallToAction";
 import Layout from "../../layouts/Layout.astro";
 import '../../styles/global.scss';
 import { projectsData } from "../../assets/data/projects";
+import ProjectImages from "../../components/Pages/SingleProject/ProjectImages";
 
 export async function getStaticPaths() {
   return projectsData.map((project) => ({
@@ -19,6 +20,6 @@ if (!project) {
 ---
 
 <Layout>
-  {project.title}
+  <ProjectImages project={project} />
   <CallToAction />
 </Layout>

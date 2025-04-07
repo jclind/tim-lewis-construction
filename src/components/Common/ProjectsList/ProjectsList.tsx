@@ -19,7 +19,7 @@ const ProjectsList = ({
           key={project.id}
         >
           <div className={`${styles.image} image`}>
-            <img src={project.imgSrc} alt={project.imgAlt} />
+            <img src={project.coverImgSrc} alt={project.coverImgAlt} />
           </div>
           <div className={styles.title_container}>
             <h2>{project.title}</h2>
