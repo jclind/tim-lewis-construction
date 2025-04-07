@@ -1,5 +1,3 @@
-import { string } from 'astro:schema'
-
 export interface TestimonialType {
   name: string
   rating: 1 | 2 | 3 | 4 | 5

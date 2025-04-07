@@ -1,12 +1,7 @@
 import React from 'react'
 import styles from './Footer.module.scss'
-import { links } from './links'
 import Divider from '../../Common/Divider'
-import {
-  EMAIL_ADDRESS,
-  LEGAL_NAME,
-  PHONE_NUMBER,
-} from '../../../assets/data/legalInfo'
+import { EMAIL_ADDRESS, PHONE_NUMBER } from '../../../assets/data/legalInfo'
 import { Mail, MapPin, Phone, type LucideProps } from 'lucide-react'
 
 const ContactItem = ({

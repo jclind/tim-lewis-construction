@@ -1,7 +1,6 @@
 import React from 'react'
 import styles from './OurPortfolio.module.scss'
 import { getFeaturedProjects } from '../../../../assets/data/projects'
-import { ArrowUpRight } from 'lucide-react'
 import { ButtonLink } from '../../../Common/ButtonLink'
 import ProjectsList from '../../../Common/ProjectsList'
 

@@ -1,6 +1,6 @@
 import React from 'react'
 import styles from './AboutUs.module.scss'
-import { Check, CircleCheckBig, MapPinHouse, MapPinned } from 'lucide-react'
+import { Check, MapPinHouse } from 'lucide-react'
 import { ButtonLink } from '../../../Common/ButtonLink'
 
 const whyChooseUsList = [
