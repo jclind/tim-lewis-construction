@@ -7,13 +7,17 @@ import PricingFactors from '../components/Pages/Pricing/PricingFactors';
 import Testimonials from '../components/Layout/Testimonials';
 import CallToAction from '../components/Layout/CallToAction';
 
+const pageData = {
+  title: 'Pricing | Tim Lewis Construction',
+  description: 'Get a transparent overview of our home renovation pricing and services. Based in the Pittsburgh area, Tim Lewis Construction offers free quotes and personalized project estimates.',
+}
 const heroData = {
   title: "How We Determine Pricing",
   description: "Every renovation is unique, which is why we tailor our pricing to fit your specific project. Factors like size, materials, and customization all play a role in the final cost. Reach out today for a personalized estimate.",
 };
 ---
 
-<Layout>
+<Layout title={pageData.title} description={pageData.description}>
   <DefaultHero title={heroData.title} description={heroData.description} />
   <PricingFactors />
   <Testimonials />

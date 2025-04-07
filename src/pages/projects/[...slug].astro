@@ -17,9 +17,14 @@ const project = projectsData.find((p) => p.id === slug);
 if (!project) {
   throw new Error(`Project not found: ${slug}`);
 }
+
+const pageData = {
+  title: `${project.title} | Tim Lewis Construction`,
+  description: 'See the details of a recent home renovation project by Tim Lewis Construction in the Pittsburgh area. High-quality local craftsmanship in action—featuring decks, remodels, and installations that inspire.',
+}
 ---
 
-<Layout>
+<Layout title={pageData.title} description={pageData.description}>
   <ProjectImages project={project} />
   <CallToAction />
 </Layout>

@@ -5,11 +5,12 @@ import '../styles/global.scss';
 import PrivacyPolicyContent from '../components/Pages/PrivacyPolicy/PrivacyPolicyContent';
 
 
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+const pageData = {
+  title: 'Privacy Policy | Tim Lewis Construction',
+  description: 'Read the Tim Lewis Construction privacy policy to learn how we handle and protect your personal information. We are committed to privacy and transparency for all Pittsburgh-area clients and website visitors.',
+}
 ---
 
-<Layout>
+<Layout title={pageData.title} description={pageData.description}>
   <PrivacyPolicyContent />
-   
 </Layout>

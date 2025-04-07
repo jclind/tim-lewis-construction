@@ -8,14 +8,17 @@ import WhyChooseUs from '../components/Pages/About/WhyChooseUs';
 import CallToAction from '../components/Layout/CallToAction';
 import Testimonials from '../components/Layout/Testimonials';
 
-
+const pageData = {
+  title: 'About | Tim Lewis Construction',
+  description: 'Learn about Tim Lewis Construction, a trusted name in Pittsburgh home renovation. With years of hands-on experience and a passion for quality work, Tim helps homeowners bring new life to their spaces with care and precision.',
+}
 const heroData = {
   title: "About Us",
   description: "With years of hands-on experience, Tim Lewis Construction delivers exceptional craftsmanship and customer-focused service you can rely on.",
 };
 ---
 
-<Layout>
+<Layout title={pageData.title} description={pageData.description}>
   <DefaultHero 
     type={'light_alt'}
     title={heroData.title}

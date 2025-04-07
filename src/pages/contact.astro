@@ -4,9 +4,13 @@ import '../styles/global.scss';
 import ContactForm from '../components/Pages/Contact/ContactForm';
 import ContactOptions from '../components/Pages/Contact/ContactOptions';
 
+const pageData = {
+  title: 'Contact | Tim Lewis Construction',
+  description: 'Ready to get started? Contact Tim Lewis Construction to discuss your renovation project. We proudly serve Pittsburgh neighborhoods including Fox Chapel, Hampton, McCandless, and surrounding areas.',
+}
 ---
 
-<Layout>
+<Layout title={pageData.title} description={pageData.description}>
   <ContactForm />
   <ContactOptions />
 </Layout>

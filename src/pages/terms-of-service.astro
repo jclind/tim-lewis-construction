@@ -1,15 +1,16 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import Hero from '../components/Pages/Home/Hero';
 import '../styles/global.scss';
 import TermsOfServiceContent from '../components/Pages/TermsOfService/TermsOfServiceContent';
 
 
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+const pageData = {
+  title: 'Terms of Service | Tim Lewis Construction',
+  description: 'Review the terms of service for using the Tim Lewis Construction website. These terms govern your access, rights, and responsibilities as a visitor to our Pittsburgh-based home renovation site.',
+}
 ---
 
-<Layout>
+<Layout title={pageData.title} description={pageData.description}>
   <TermsOfServiceContent />
   
 </Layout>

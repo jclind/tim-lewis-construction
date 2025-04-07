@@ -8,14 +8,17 @@ import RenovationProcess from '../components/Pages/Services/RenovationProcess';
 import Testimonials from '../components/Layout/Testimonials';
 import CallToAction from '../components/Layout/CallToAction';
 
-
+const pageData = {
+  title: 'Services | Tim Lewis Construction',
+  description: "Explore our full range of home renovation services across Pittsburgh's North Hills—from deck construction and bathroom remodeling to trim work, window and door installation, and more. Tailored, local craftsmanship you can rely on.",
+}
 const heroData = {
   title: "Our Services",
   description: "From decks and bathrooms to kitchens and basements, Tim Lewis Construction delivers high-quality renovations designed to enhance your home’s beauty, functionality, and value.",
 };
 ---
 
-<Layout>
+<Layout title={pageData.title} description={pageData.description}>
   <DefaultHero
     title={heroData.title}
     description={heroData.description}

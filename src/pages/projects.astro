@@ -7,13 +7,17 @@ import ProjectGallery from '../components/Pages/Projects/ProjectGallery';
 import CallToAction from '../components/Layout/CallToAction';
 
 
+const pageData = {
+  title: 'Projects | Tim Lewis Construction',
+  description: 'Browse real home renovation projects completed by Tim Lewis Construction throughout the greater Pittsburgh area. From stunning decks to custom bathrooms, our work speaks for itself.',
+}
 const heroData = {
   title: "Our Projects",
   description: "Explore some of our recent renovation projects, from stunning deck constructions to complete kitchen and bathroom remodels. Each project reflects our commitment to quality and attention to detail.",
 };
 ---
 
-<Layout>
+<Layout title={pageData.title} description={pageData.description}>
   <DefaultHero 
     title={heroData.title} 
     description={heroData.description} />
