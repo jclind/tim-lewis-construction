@@ -19,14 +19,14 @@
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
-      gap: $gap-regular;
+      gap: $gap-medium;
       width: 100%;
-      margin-top: $gap-large;
+      margin-top: $gap-medium;
       .right_row,
       .left_row {
         display: flex;
         flex-direction: column;
-        gap: $gap-regular;
+        gap: $gap-medium;
         max-width: 400px;
       }
     }
