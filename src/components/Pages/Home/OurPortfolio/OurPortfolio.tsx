@@ -3,6 +3,7 @@ import styles from './OurPortfolio.module.scss'
 import { getFeaturedProjects } from '../../../../assets/data/projects'
 import { ArrowUpRight } from 'lucide-react'
 import { ButtonLink } from '../../../Common/ButtonLink'
+import ProjectsList from '../../../Common/ProjectsList'
 
 const OurPortfolio = () => {
   return (
@@ -21,19 +22,7 @@ const OurPortfolio = () => {
               excellence
             </p>
           </div>
-          <div className={styles.projects}>
-            {getFeaturedProjects().map(project => (
-              <div className={styles.project} key={project.id}>
-                <div className={`${styles.image} image`}>
-                  <img src={project.imgSrc} alt={project.imgAlt} />
-                </div>
-                <div className={styles.title_container}>
-                  <h2>{project.title}</h2>
-                  <ArrowUpRight />
-                </div>
-              </div>
-            ))}
-          </div>
+          <ProjectsList projects={getFeaturedProjects()} size='large' />
           <ButtonLink
             text='View All Projects'
             link='/projects'

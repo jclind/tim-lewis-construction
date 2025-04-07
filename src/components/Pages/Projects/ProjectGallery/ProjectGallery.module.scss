@@ -1,0 +1,8 @@
+@use '../../../../styles/vars' as *;
+
+.ProjectGallery {
+  margin: $gap-xl 0;
+  .content {
+    width: 100%;
+  }
+}

@@ -1,0 +1,97 @@
+@use '../../../styles/vars' as *;
+
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: $gap-large;
+  margin-bottom: $gap-xl;
+  width: 100%;
+  .project {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    box-shadow: $box-shadow-card;
+    border-radius: $border-radius;
+    background: $white;
+    overflow: hidden;
+    max-width: 450px;
+    .image,
+    .title_container,
+    .view_project {
+      transition: all 0.2s linear;
+    }
+    .image {
+      img {
+        aspect-ratio: 1;
+        object-fit: cover;
+      }
+    }
+    .title_container {
+      position: absolute;
+      bottom: 0;
+      z-index: 5;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      padding: $gap-regular;
+      padding-top: $gap-xl;
+      padding-bottom: $gap-regular;
+      background: linear-gradient(to top, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0));
+      color: $white;
+
+      h2 {
+        font-size: $fs-regular;
+        color: $white;
+      }
+      a {
+        font-size: $fs-small;
+        color: $primary-accent;
+        font-weight: 500;
+        text-decoration: underline;
+      }
+    }
+    .view_project {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background: $primary-accent;
+      color: $white;
+      padding: $gap-small;
+      border-radius: $border-radius;
+      font-weight: 600;
+      opacity: 0;
+    }
+    &:hover {
+      .image {
+        filter: brightness(0.8);
+      }
+      .title_container {
+        background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+      }
+      .view_project {
+        opacity: 1;
+      }
+    }
+  }
+
+  &.large {
+    max-width: 450px;
+  }
+
+  @media (min-width: 1235px) {
+    justify-content: space-between;
+    gap: $gap-medium;
+
+    .project {
+      max-width: 350px;
+    }
+    &.large {
+      max-width: 350px;
+    }
+  }
+}

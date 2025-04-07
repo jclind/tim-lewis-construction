@@ -1,4 +1,12 @@
-export const projectsList = [
+export interface ProjectType {
+  id: string
+  title: string
+  imgSrc: string
+  imgAlt: string
+  isFeatured: boolean
+}
+
+export const projectsData = [
   {
     id: 'b27f18e3-d230-4a6b-bb89-30fd5c6f3be7',
     title: 'Deck Addition',
@@ -86,5 +94,5 @@ export const projectsList = [
 ]
 
 export const getFeaturedProjects = () => {
-  return projectsList.filter(project => project.isFeatured)
+  return projectsData.filter(project => project.isFeatured)
 }
