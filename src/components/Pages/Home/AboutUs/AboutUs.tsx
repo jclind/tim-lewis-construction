@@ -66,7 +66,7 @@ const AboutUs = () => {
             </div>
             <ButtonLink
               text="Let's Get In Touch"
-              link='contact'
+              link='/contact'
               color='secondary'
             />
           </div>

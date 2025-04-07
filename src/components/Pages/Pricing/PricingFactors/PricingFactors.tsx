@@ -38,7 +38,7 @@ const PricingFactors = () => {
             </div>
             <ButtonLink
               text='Get Your Free Estimate'
-              link='contact'
+              link='/contact'
               color='secondary'
             />
           </div>

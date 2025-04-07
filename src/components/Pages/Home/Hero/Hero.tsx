@@ -27,7 +27,7 @@ const Hero = () => {
             </p>
             <ButtonLink
               text='Get A Free Estimate'
-              link='contact'
+              link='/contact'
               color='tertiary'
               size='large'
             />
