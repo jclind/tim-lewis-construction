@@ -12,7 +12,7 @@ const ServicesList = () => {
             {servicesData.map((service, index) => (
               <div key={index} className={`${styles.service} card`}>
                 <div className={`${styles.image} image`}>
-                  <img src={service.imgSrc} alt={service.title} />
+                  <img src={service.coverImgSrc} alt={service.title} />
                 </div>
                 <div className={styles.text_content}>
                   <h2>{service.title}</h2>

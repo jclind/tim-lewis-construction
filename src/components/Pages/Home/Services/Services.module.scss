@@ -1,0 +1,22 @@
+@use '../../../../styles/vars' as *;
+
+.Services {
+  padding: $gap-xl 0;
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    h1,
+    p {
+      text-align: center;
+    }
+    h1 {
+      margin-bottom: $gap-regular;
+    }
+    .call_to_action_text {
+      margin-top: $gap-medium;
+      margin-bottom: $gap-medium;
+    }
+  }
+}

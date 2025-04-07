@@ -10,3 +10,5 @@ export const FULL_ADDRESS = `${ADDRESS}, ${CITY}, ${STATE} ${ZIP_CODE}, ${COUNTR
 export const LEGAL_NAME = 'Placeholder Company Name'
 export const WEBSITE_DESCRIPTION = ''
 export const WEBSITE_URL = 'https://placeholder.com'
+export const FACEBOOK_URL =
+  'https://www.facebook.com/profile.php?id=61560594282818'

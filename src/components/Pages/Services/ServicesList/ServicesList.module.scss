@@ -8,10 +8,11 @@
       flex-direction: column;
       gap: $gap-large;
       .service {
+        max-width: 375px;
         .image {
           border-radius: $border-radius;
           overflow: hidden;
-          max-width: 300px;
+          max-width: 375px;
         }
         .text_content {
           max-width: 400px;

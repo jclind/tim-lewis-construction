@@ -4,9 +4,10 @@
   min-width: 140px;
   width: fit-content !important;
   padding: $gap-regular $gap-large;
-  height: 40px;
+  height: 46px;
   white-space: nowrap;
   font-size: $fs-small;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 
   font-weight: 700;
   border-radius: $border-radius-button;

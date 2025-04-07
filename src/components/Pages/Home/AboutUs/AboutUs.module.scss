@@ -1,0 +1,86 @@
+@use '../../../../styles/vars' as *;
+
+.AboutUs {
+  background: $primary-accent;
+  color: $white;
+  padding: $gap-xl 0;
+
+  .content {
+    .image {
+      display: none;
+    }
+    .about_us_text {
+      display: flex;
+      flex-direction: column;
+      gap: $gap-medium;
+      margin-bottom: $gap-xl;
+    }
+    h1 {
+      color: $secondary-background;
+    }
+    h1,
+    h2,
+    p {
+      text-align: left;
+    }
+    p {
+      color: $white;
+      font-weight: 400;
+    }
+    .why_choose_us_text {
+      margin-bottom: $gap-xl;
+    }
+    .values {
+      padding-top: $gap-medium;
+      display: flex;
+      flex-direction: column;
+      gap: $gap-regular;
+      .item {
+        display: flex;
+        gap: $gap-regular;
+
+        h2 {
+          font-size: $fs-regular;
+          margin-bottom: $gap-tiny;
+        }
+        p {
+          font-size: $fs-small;
+          font-weight: 400;
+          color: $secondary-background;
+        }
+      }
+    }
+  }
+
+  @media (min-width: 900px) {
+    .content {
+      display: flex;
+      gap: $gap-large;
+      align-items: stretch;
+      height: max-content;
+      .image {
+        display: block;
+        max-width: 50%;
+        img {
+          height: 100% !important;
+          object-fit: cover;
+        }
+      }
+      .about_us_text {
+      }
+    }
+  }
+  @media (min-width: 1000px) {
+    .content {
+      display: flex;
+      gap: $gap-xl;
+      .image {
+        display: block;
+        max-width: 50%;
+      }
+      .text_content {
+        min-width: 50%;
+      }
+    }
+  }
+}

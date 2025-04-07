@@ -17,7 +17,12 @@ const Navbar = ({ currentPath }: NavbarProps) => {
           <img src='/images/logo.webp' alt='Deer Lakes Web Designs' />
         </a>
         <div className={styles.hamburger}>
-          <Hamburger toggled={isOpen} toggle={setIsOpen} label='Menu' />
+          <Hamburger
+            toggled={isOpen}
+            toggle={setIsOpen}
+            size={24}
+            label='Menu'
+          />
         </div>
         <nav className={`${styles.links} ${isOpen ? styles.open : ''}`}>
           {navLinks.map(link => (

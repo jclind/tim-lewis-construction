@@ -3,6 +3,8 @@ import Layout from '../layouts/Layout.astro';
 import Hero from '../components/Pages/Home/Hero';
 import '../styles/global.scss';
 import DefaultHero from '../components/Layout/DefaultHero';
+import ProjectGallery from '../components/Pages/Projects/ProjectGallery';
+import CallToAction from '../components/Layout/CallToAction';
 
 
 const heroData = {
@@ -14,6 +16,7 @@ const heroData = {
 <Layout>
   <DefaultHero 
     title={heroData.title} 
-    description={heroData.description}>
-  
+    description={heroData.description} />
+  <ProjectGallery />
+  <CallToAction />
 </Layout>
