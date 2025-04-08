@@ -13,256 +13,158 @@ export interface ProjectType {
 
 export const projectsData = [
   {
-    id: 'b27f18e3-d230-4a6b-bb89-30fd5c6f3be7',
+    id: '9d405c1c-31f8-488d-a32a-e2baf7de7e1e',
     title: 'Deck Addition',
-    coverImgSrc: '/images/projects/project-img.webp',
+    coverImgSrc: '/images/projects/deck_addition_1/cover.webp',
     coverImgAlt: 'Wooden deck addition on a backyard home',
     projectImgs: [
       {
-        src: '/images/projects/project-img.webp',
-        alt: 'Wooden deck addition on a backyard home',
+        src: '/images/projects/deck_addition_1/2.webp',
+        alt: 'Wooden deck addition on a backyard home progress',
       },
       {
-        src: '/images/projects/project-img.webp',
-        alt: 'Wooden deck addition on a backyard home',
+        src: '/images/projects/deck_addition_1/1.webp',
+        alt: 'Wooden deck addition on a backyard home progress',
       },
       {
-        src: '/images/projects/project-img.webp',
-        alt: 'Wooden deck addition on a backyard home',
-      },
-    ],
-    isFeatured: false,
-  },
-  {
-    id: '12d3f85f-7e33-4ef6-b709-8d1f59dfc8c9',
-    title: 'Bathroom Remodel',
-    coverImgSrc: '/images/projects/project-img.webp',
-    coverImgAlt: 'Modern remodeled bathroom with glass shower',
-    projectImgs: [
-      {
-        src: '/images/projects/project-img.webp',
-        alt: 'Wooden deck addition on a backyard home',
+        src: '/images/projects/deck_addition_1/3.webp',
+        alt: 'Wooden deck addition on a backyard home progress',
       },
       {
-        src: '/images/projects/project-img.webp',
-        alt: 'Wooden deck addition on a backyard home',
+        src: '/images/projects/deck_addition_1/4.webp',
+        alt: 'Wooden deck addition on a backyard home progress',
       },
       {
-        src: '/images/projects/project-img.webp',
-        alt: 'Wooden deck addition on a backyard home',
-      },
-    ],
-    isFeatured: false,
-  },
-  {
-    id: 'c014f2a7-0fd9-49d5-bb7e-17413a5e12a8',
-    title: 'Kitchen Renovation',
-    coverImgSrc: '/images/projects/project-img.webp',
-    coverImgAlt: 'Updated kitchen with island and new cabinets',
-    projectImgs: [
-      {
-        src: '/images/projects/project-img.webp',
-        alt: 'Wooden deck addition on a backyard home',
+        src: '/images/projects/deck_addition_1/5.webp',
+        alt: 'Wooden deck addition on a backyard home progress',
       },
       {
-        src: '/images/projects/project-img.webp',
-        alt: 'Wooden deck addition on a backyard home',
+        src: '/images/projects/deck_addition_1/6.webp',
+        alt: 'Wooden deck addition on a backyard home progress',
       },
       {
-        src: '/images/projects/project-img.webp',
-        alt: 'Wooden deck addition on a backyard home',
+        src: '/images/projects/deck_addition_1/7.webp',
+        alt: 'Wooden deck addition on a backyard home progress',
       },
     ],
     isFeatured: true,
   },
   {
-    id: 'a1378f67-7581-4a32-bb3a-8885a524c6b9',
-    title: 'Garage Conversion',
-    coverImgSrc: '/images/projects/project-img.webp',
-    coverImgAlt: 'Garage space converted into home office',
+    id: '04113440-3ce1-4526-90a7-a923b24d6b6c',
+    title: 'Bathroom remodel',
+    coverImgSrc: '/images/projects/bathroom_remodel_1/cover.webp',
+    coverImgAlt: 'Modern tiled bathroom with bathtub',
     projectImgs: [
       {
-        src: '/images/projects/project-img.webp',
-        alt: 'Wooden deck addition on a backyard home',
+        src: '/images/projects/bathroom_remodel_1/cover.webp',
+        alt: 'Modern tiled bathroom with bathtub progress',
       },
       {
-        src: '/images/projects/project-img.webp',
-        alt: 'Wooden deck addition on a backyard home',
+        src: '/images/projects/bathroom_remodel_1/2.webp',
+        alt: 'Modern tiled bathroom with bathtub progress',
       },
       {
-        src: '/images/projects/project-img.webp',
-        alt: 'Wooden deck addition on a backyard home',
+        src: '/images/projects/bathroom_remodel_1/3.webp',
+        alt: 'Modern tiled bathroom with bathtub progress',
+      },
+      {
+        src: '/images/projects/bathroom_remodel_1/4.webp',
+        alt: 'Modern tiled bathroom with bathtub progress',
+      },
+      {
+        src: '/images/projects/bathroom_remodel_1/5.webp',
+        alt: 'Modern tiled bathroom with bathtub progress',
+      },
+      {
+        src: '/images/projects/bathroom_remodel_1/6.webp',
+        alt: 'Modern tiled bathroom with bathtub progress',
       },
     ],
-    isFeatured: false,
+    isFeatured: true,
   },
   {
-    id: '4b11d62d-2a77-42c5-85c2-961b456c4aa1',
-    title: 'Roof Replacement',
-    coverImgSrc: '/images/projects/project-img.webp',
-    coverImgAlt: 'Crew replacing shingles on a house roof',
-    projectImgs: [
-      {
-        src: '/images/projects/project-img.webp',
-        alt: 'Wooden deck addition on a backyard home',
-      },
-      {
-        src: '/images/projects/project-img.webp',
-        alt: 'Wooden deck addition on a backyard home',
-      },
-      {
-        src: '/images/projects/project-img.webp',
-        alt: 'Wooden deck addition on a backyard home',
-      },
-    ],
-    isFeatured: false,
-  },
-  {
-    id: 'e33c6f9e-3e1c-4854-94fc-7f4ff89a8394',
-    title: 'Home Office Build',
-    coverImgSrc: '/images/projects/project-img.webp',
-    coverImgAlt: 'Custom built home office with desk and shelves',
-    projectImgs: [
-      {
-        src: '/images/projects/project-img.webp',
-        alt: 'Wooden deck addition on a backyard home',
-      },
-      {
-        src: '/images/projects/project-img.webp',
-        alt: 'Wooden deck addition on a backyard home',
-      },
-      {
-        src: '/images/projects/project-img.webp',
-        alt: 'Wooden deck addition on a backyard home',
-      },
-    ],
-    isFeatured: false,
-  },
-  {
-    id: 'ff7815f9-e6f3-4143-a7a0-19b79e67acdc',
+    id: '4c196b7e-e8a0-4e10-ad5d-9cfdec1e9947',
     title: 'Basement Finishing',
-    coverImgSrc: '/images/projects/project-img.webp',
-    coverImgAlt: 'Finished basement with carpet and drywall',
+    coverImgSrc: '/images/projects/basement_finishing_1/cover.webp',
+    coverImgAlt: 'Modern finished basement',
     projectImgs: [
       {
-        src: '/images/projects/project-img.webp',
-        alt: 'Wooden deck addition on a backyard home',
-      },
-      {
-        src: '/images/projects/project-img.webp',
-        alt: 'Wooden deck addition on a backyard home',
-      },
-      {
-        src: '/images/projects/project-img.webp',
-        alt: 'Wooden deck addition on a backyard home',
+        src: '/images/projects/basement_finishing_1/cover.webp',
+        alt: 'Modern finished basement progress',
       },
     ],
     isFeatured: true,
   },
   {
-    id: 'b8b328b4-774f-4c82-9c34-1ab4ce10f21b',
-    title: 'Sunroom Installation',
-    coverImgSrc: '/images/projects/project-img.webp',
-    coverImgAlt: 'New sunroom with large windows and bright light',
+    id: '0e9229b9-ffa3-47a3-84c6-744de5d4d214',
+    title: 'Bay window finishing',
+    coverImgSrc: '/images/projects/bay_window_1/cover.webp',
+    coverImgAlt: 'Bay window',
     projectImgs: [
       {
-        src: '/images/projects/project-img.webp',
-        alt: 'Wooden deck addition on a backyard home',
+        src: '/images/projects/bay_window_1/2.webp',
+        alt: 'Bay window progress',
       },
       {
-        src: '/images/projects/project-img.webp',
-        alt: 'Wooden deck addition on a backyard home',
+        src: '/images/projects/bay_window_1/cover.webp',
+        alt: 'Bay window progress',
       },
       {
-        src: '/images/projects/project-img.webp',
-        alt: 'Wooden deck addition on a backyard home',
-      },
-    ],
-    isFeatured: false,
-  },
-  {
-    id: 'dac0e8df-25e6-474a-a0e6-ea7d1c1c1482',
-    title: 'Attic Insulation',
-    coverImgSrc: '/images/projects/project-img.webp',
-    coverImgAlt: 'Crew insulating attic space with fiberglass',
-    projectImgs: [
-      {
-        src: '/images/projects/project-img.webp',
-        alt: 'Wooden deck addition on a backyard home',
+        src: '/images/projects/bay_window_1/3.webp',
+        alt: 'Bay window progress',
       },
       {
-        src: '/images/projects/project-img.webp',
-        alt: 'Wooden deck addition on a backyard home',
+        src: '/images/projects/bay_window_1/4.webp',
+        alt: 'Bay window progress',
       },
       {
-        src: '/images/projects/project-img.webp',
-        alt: 'Wooden deck addition on a backyard home',
-      },
-    ],
-    isFeatured: false,
-  },
-  {
-    id: '5aee3a9f-1a6f-4e88-b2cb-11b2f799a772',
-    title: 'Fence Installation',
-    coverImgSrc: '/images/projects/project-img.webp',
-    coverImgAlt: 'Wooden privacy fence in backyard',
-    projectImgs: [
-      {
-        src: '/images/projects/project-img.webp',
-        alt: 'Wooden deck addition on a backyard home',
-      },
-      {
-        src: '/images/projects/project-img.webp',
-        alt: 'Wooden deck addition on a backyard home',
-      },
-      {
-        src: '/images/projects/project-img.webp',
-        alt: 'Wooden deck addition on a backyard home',
-      },
-    ],
-    isFeatured: false,
-  },
-  {
-    id: '3cfb84e1-d418-4b8f-a3cf-66d0f0b3f8b9',
-    title: 'Driveway Resurfacing',
-    coverImgSrc: '/images/projects/project-img.webp',
-    coverImgAlt: 'Newly resurfaced asphalt driveway',
-    projectImgs: [
-      {
-        src: '/images/projects/project-img.webp',
-        alt: 'Wooden deck addition on a backyard home',
-      },
-      {
-        src: '/images/projects/project-img.webp',
-        alt: 'Wooden deck addition on a backyard home',
-      },
-      {
-        src: '/images/projects/project-img.webp',
-        alt: 'Wooden deck addition on a backyard home',
+        src: '/images/projects/bay_window_1/5.webp',
+        alt: 'Bay window progress',
       },
     ],
     isFeatured: true,
   },
   {
-    id: '2ab74e4c-8398-4291-bb53-6b82bcd8f22a',
-    title: 'Patio Paver Installation',
-    coverImgSrc: '/images/projects/project-img.webp',
-    coverImgAlt: 'Stone paver patio under construction',
+    id: '247a45ca-95c5-43bc-a4eb-8ce24d59aea6',
+    title: 'Stair Rail Installation',
+    coverImgSrc: '/images/projects/stair_rail_1/cover.webp',
+    coverImgAlt: 'Staircase railing installation',
     projectImgs: [
       {
-        src: '/images/projects/project-img.webp',
-        alt: 'Wooden deck addition on a backyard home',
+        src: '/images/projects/stair_rail_1/cover.webp',
+        alt: 'Staircase railing installation progress',
       },
       {
-        src: '/images/projects/project-img.webp',
-        alt: 'Wooden deck addition on a backyard home',
+        src: '/images/projects/stair_rail_1/2.webp',
+        alt: 'Staircase railing installation progress',
       },
       {
-        src: '/images/projects/project-img.webp',
-        alt: 'Wooden deck addition on a backyard home',
+        src: '/images/projects/stair_rail_1/3.webp',
+        alt: 'Staircase railing installation progress',
       },
     ],
-    isFeatured: false,
+    isFeatured: true,
+  },
+  {
+    id: '247a45ca-95c5-43bc-a4eb-8ce24d59aea6',
+    title: 'Cabinet Installation',
+    coverImgSrc: '/images/projects/cabinet_1/cover.webp',
+    coverImgAlt: 'Cabinet installation',
+    projectImgs: [
+      {
+        src: '/images/projects/cabinet_1/cover.webp',
+        alt: 'Cabinet installation progress',
+      },
+      {
+        src: '/images/projects/cabinet_1/2.webp',
+        alt: 'Cabinet installation progress',
+      },
+      {
+        src: '/images/projects/cabinet_1/3.webp',
+        alt: 'Cabinet installation progress',
+      },
+    ],
+    isFeatured: true,
   },
 ]
 
