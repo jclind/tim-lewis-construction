@@ -146,7 +146,7 @@ export const projectsData = [
     isFeatured: true,
   },
   {
-    id: '247a45ca-95c5-43bc-a4eb-8ce24d59aea6',
+    id: '2cca0da1-ef75-441e-b9e7-c1d53d40762c',
     title: 'Cabinet Installation',
     coverImgSrc: '/images/projects/cabinet_1/cover.webp',
     coverImgAlt: 'Cabinet installation',

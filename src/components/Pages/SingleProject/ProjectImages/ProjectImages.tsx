@@ -5,9 +5,19 @@ import type {
   ProjectType,
 } from '../../../../assets/data/projects'
 
-const ImgComponent = ({ imgData }: { imgData: ProjectImgType }) => (
+const ImgComponent = ({
+  imgData,
+  index,
+}: {
+  imgData: ProjectImgType
+  index: number
+}) => (
   <div className={`${styles.image} image`}>
-    <img src={imgData.src} alt={imgData.alt} />
+    <img
+      src={imgData.src}
+      alt={imgData.alt}
+      loading={index > 0 ? 'lazy' : 'eager'}
+    />
   </div>
 )
 
@@ -22,7 +32,7 @@ const ProjectImages = ({ project }: { project: ProjectType }) => {
             <div className={styles.left_row}>
               {project.projectImgs.map((imgData, index) => {
                 if (index % 2 === 0) {
-                  return <ImgComponent imgData={imgData} />
+                  return <ImgComponent imgData={imgData} index={index} />
                 }
                 return null
               })}
@@ -31,7 +41,7 @@ const ProjectImages = ({ project }: { project: ProjectType }) => {
               <div className={styles.left_row}>
                 {project.projectImgs.map((imgData, index) => {
                   if (index % 2 === 1) {
-                    return <ImgComponent imgData={imgData} />
+                    return <ImgComponent imgData={imgData} index={index} />
                   }
                   return null
                 })}

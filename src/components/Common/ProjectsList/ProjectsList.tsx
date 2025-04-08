@@ -6,9 +6,11 @@ import { ArrowUpRight } from 'lucide-react'
 const ProjectsList = ({
   projects,
   size = 'regular',
+  lazy = false,
 }: {
   projects: ProjectType[]
   size?: 'regular' | 'large'
+  lazy?: boolean
 }) => {
   return (
     <div className={`${styles.projects} ${size}`}>
@@ -22,7 +24,7 @@ const ProjectsList = ({
             <img
               src={project.coverImgSrc}
               alt={project.coverImgAlt}
-              loading='lazy'
+              loading={lazy ? 'lazy' : 'eager'}
             />
           </div>
           <div className={styles.title_container}>

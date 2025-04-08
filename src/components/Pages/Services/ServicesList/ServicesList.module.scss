@@ -10,9 +10,17 @@
       .service {
         max-width: 375px;
         .image {
+          position: relative;
           border-radius: $border-radius;
           overflow: hidden;
           max-width: 375px;
+          padding-top: 100%;
+          img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            object-fit: cover;
+          }
         }
         .text_content {
           max-width: 400px;

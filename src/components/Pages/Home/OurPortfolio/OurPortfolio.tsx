@@ -21,7 +21,11 @@ const OurPortfolio = () => {
               excellence
             </p>
           </div>
-          <ProjectsList projects={getFeaturedProjects()} size='large' />
+          <ProjectsList
+            projects={getFeaturedProjects()}
+            size='large'
+            lazy={true}
+          />
           <ButtonLink
             text='View All Projects'
             link='/projects'

@@ -10,7 +10,7 @@ const Services = () => {
         <div className={styles.content}>
           <h1 className='section_title'>Our Services</h1>
           <p>Expert Renovations, Lasting Results</p>
-          <ServicesList />
+          <ServicesList lazy={true} />
           <p className={styles.call_to_action_text}>
             Want to see everything that we offer?
           </p>
