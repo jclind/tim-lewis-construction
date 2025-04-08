@@ -7,9 +7,14 @@ import AboutUs from '../components/Pages/Home/AboutUs';
 import Testimonials from '../components/Layout/Testimonials';
 import CallToAction from '../components/Layout/CallToAction';
 import OurPortfolio from '../components/Pages/Home/OurPortfolio';
+
+const pageData = {
+  title: 'Home | Tim Lewis Construction',
+  description: 'Tim Lewis Construction (TLC) offers expert home renovation and remodeling services throughout the Pittsburgh area, from Fox Chapel to McCandless. Discover high-quality craftsmanship in decks, bathrooms, windows, doors, and more.',
+}
 ---
 
-<Layout >
+<Layout title={pageData.title} description={pageData.description}>
   <Hero />
   <Services />
   <AboutUs />
