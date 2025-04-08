@@ -38,7 +38,7 @@ const valuesList = [
   {
     Icon: House,
     title: 'Personalized Solutions',
-    text: 'Every home is unique, and so is every renovation. We tailor our services to <strong>fit your needs and style</strong>, offering customized solutions that bring your vision to life. Whether it’s a modern kitchen or a cozy deck, we make it yours.',
+    text: 'Every home is unique, and so is every renovation. We tailor our services to <strong>fit your needs and style</strong>, offering customized solutions that bring your vision to life. Whether it’s a modern bathroom or a cozy deck, we make it yours.',
   },
 ]
 
