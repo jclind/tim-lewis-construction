@@ -16,7 +16,7 @@ const ProjectsList = ({
     <div className={`${styles.projects} ${size}`}>
       {projects.map(project => (
         <a
-          href={`projects/${project.id}`}
+          href={`/projects/${project.id}`}
           className={styles.project}
           key={project.id}
         >
