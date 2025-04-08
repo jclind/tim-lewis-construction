@@ -13,7 +13,13 @@ const Hero = () => {
             </h2>
           </div>
           <div className={`${styles.image} image`}>
-            <img src='/images/home/hero.webp' alt='' />
+            <img
+              srcSet='/images/home/hero_mobile.webp 500w, 
+          /images/home/hero.webp 1920w'
+              sizes='(max-width: 500px) 100vw, 1920px'
+              src='/images/home/hero.webp'
+              alt='Finished Backyard Deck'
+            />
           </div>
           <div className={styles.bottom_text}>
             <p className='section-description'>
@@ -39,7 +45,7 @@ const Hero = () => {
           /images/home/hero_background_desktop.webp 1920w'
             sizes='(max-width: 1000px) 100vw, 1920px'
             src='/images/home/hero_background_desktop.webp'
-            alt='Hero Background'
+            alt=''
           />
         </div>
       </div>
