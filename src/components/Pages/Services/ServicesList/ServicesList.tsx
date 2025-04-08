@@ -3,7 +3,7 @@ import styles from './ServicesList.module.scss'
 import { servicesData } from './servicesData'
 import { ButtonLink } from '../../../Common/ButtonLink'
 
-const ServicesList = () => {
+const ServicesList = ({ lazy = false }: { lazy?: boolean }) => {
   return (
     <div className={styles.ServicesList}>
       <div className='page__inner'>
@@ -12,7 +12,11 @@ const ServicesList = () => {
             {servicesData.map((service, index) => (
               <div key={index} className={`${styles.service} card`}>
                 <div className={`${styles.image} image`}>
-                  <img src={service.coverImgSrc} alt={service.title} />
+                  <img
+                    src={service.coverImgSrc}
+                    alt={service.title}
+                    loading={lazy ? 'lazy' : 'eager'}
+                  />
                 </div>
                 <div className={styles.text_content}>
                   <h2>{service.title}</h2>
