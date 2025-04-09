@@ -21,11 +21,17 @@ const ProjectsList = ({
           key={project.id}
         >
           <div className={`${styles.image} image`}>
-            <img
-              src={project.coverImgSrc}
-              alt={project.coverImgAlt}
-              loading={lazy ? 'lazy' : 'eager'}
-            />
+            <picture>
+              <source
+                media='(max-width: 499px)'
+                srcSet={project.coverImgSrcMobile}
+              />
+              <img
+                src={project.coverImgSrc}
+                alt={project.coverImgAlt}
+                loading={lazy ? 'lazy' : 'eager'}
+              />
+            </picture>
           </div>
           <div className={styles.title_container}>
             <h2>{project.title}</h2>
