@@ -3,6 +3,8 @@ import styles from './ProjectsList.module.scss'
 import type { ProjectType } from '../../../assets/data/projects'
 import { ArrowUpRight } from 'lucide-react'
 
+// ! FIX PROJECT ON HOME SCREEN NOT WIDE ENOUGH
+
 const ProjectsList = ({
   projects,
   size = 'regular',
