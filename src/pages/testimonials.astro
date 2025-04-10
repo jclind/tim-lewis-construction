@@ -3,6 +3,7 @@ import Layout from '../layouts/Layout.astro';
 import '../styles/global.scss';
 import CallToAction from '../components/Layout/CallToAction';
 import DefaultHero from '../components/Layout/DefaultHero';
+import Testimonials from '../components/Layout/Testimonials';
 
 const pageData = {
   title: 'Testimonials | Tim Lewis Construction',
@@ -17,5 +18,8 @@ const heroData = {
 <Layout title={pageData.title} description={pageData.description}>
   <DefaultHero 
     title={heroData.title} 
-    />
+    description={heroData.description}
+  />
+  <Testimonials showAll />
+  <CallToAction />
 </Layout>
