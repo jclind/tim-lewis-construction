@@ -1,9 +1,9 @@
 - [ ] Update legalInfo.ts
-- [ ] Update logo.webp
-- [ ] Update og_image.webp
-- [ ] Update page_not_found.svg
-- [ ] Update Scss variables
-- [ ] Update robots.txt website url
+- [x] Update logo.webp
+- [x] Update og_image.webp
+- [x] Update page_not_found.svg
+- [x] Update Scss variables
+- [x] Update robots.txt website url
 - [ ] Update Google Analytics ID (layout.astro)
 
 * not completely necessary

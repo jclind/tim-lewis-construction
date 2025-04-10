@@ -1,5 +1,6 @@
 import React from 'react'
 import styles from './PrivacyPolicyContent.module.scss'
+import { WEBSITE_URL } from '../../../../assets/data/legalInfo'
 
 const PrivacyPolicyContent = () => {
   return (
@@ -97,7 +98,7 @@ const PrivacyPolicyContent = () => {
                 </li>
                 <li>
                   <strong>Website</strong> refers to Tim Lewis Construction,
-                  accessible from https://tlcdemosite.netlify.app/
+                  accessible from {WEBSITE_URL}
                 </li>
                 <li>
                   <strong>You</strong> means the individual accessing or using
