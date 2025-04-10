@@ -61,7 +61,7 @@ const Footer = () => {
               <a href='/about' className={styles.highlighted}>
                 About
               </a>
-              <a href='/'>Home</a>
+              <a href='/testimonials'>Testimonials</a>
               <a href='/contact'>Contact</a>
             </div>
             <div className={styles.contact}>
