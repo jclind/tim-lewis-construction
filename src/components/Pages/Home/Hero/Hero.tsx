@@ -13,6 +13,7 @@ const Hero = () => {
             </h2>
           </div>
           <div className={`${styles.image} image`}>
+<<<<<<< HEAD
             <img
               srcSet='/images/home/hero_mobile.webp 500w, 
           /images/home/hero.webp 1920w'
@@ -22,6 +23,15 @@ const Hero = () => {
               width='900'
               height='600'
             />
+=======
+            <picture>
+              <source
+                media='(max-width: 499px)'
+                srcSet='/images/home/hero_mobile.webp'
+              />
+              <img src='/images/home/hero.webp' alt='Finished Backyard Deck' />
+            </picture>
+>>>>>>> 555e6af55cb53caea30da6bbe207191ccaa8e794
           </div>
           <div className={styles.bottom_text}>
             <p className='section-description'>

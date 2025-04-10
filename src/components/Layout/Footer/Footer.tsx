@@ -47,6 +47,7 @@ const Footer = () => {
               <img
                 src='/images/logo_inverted.webp'
                 alt='Deer Lakes Web Design Icon'
+                loading='lazy'
               />
             </div>
             <div className={`${styles.column} ${styles.column1}`} id='links'>
