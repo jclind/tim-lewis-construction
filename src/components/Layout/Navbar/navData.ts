@@ -16,6 +16,10 @@ export const navLinks = [
     path: '/projects',
   },
   {
+    title: 'Testimonials',
+    path: '/testimonials',
+  },
+  {
     title: 'Pricing',
     path: '/pricing',
   },
