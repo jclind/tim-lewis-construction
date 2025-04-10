@@ -19,6 +19,8 @@ const Hero = () => {
               sizes='(max-width: 500px) 100vw, 1920px'
               src='/images/home/hero.webp'
               alt='Finished Backyard Deck'
+              width='900'
+              height='600'
             />
           </div>
           <div className={styles.bottom_text}>

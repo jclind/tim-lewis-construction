@@ -1,6 +1,7 @@
 ---
 import Navbar from '../components/Layout/Navbar';
 import Footer from '../components/Layout/Footer';
+import '@fontsource-variable/montserrat';
 
 import { LEGAL_NAME, WEBSITE_DESCRIPTION } from '../assets/data/legalInfo';
 
@@ -11,6 +12,7 @@ interface Props {
 const { title = LEGAL_NAME, description = WEBSITE_DESCRIPTION } = Astro.props;
 const siteName = LEGAL_NAME
 const GOOGLE_ANALYTICS_ID = 'G-XXXXXXXXXX'
+
 ---
 
 
@@ -18,8 +20,8 @@ const GOOGLE_ANALYTICS_ID = 'G-XXXXXXXXXX'
 <!doctype html>
 <html lang="en">
 	<head>
-		<!-- Google tag (gtag.js) -->
-		<!-- <script type="text/partytown" async src={`https://www.googletagmanager.com/gtag/js?id=${GOOGLE_ANALYTICS_ID}`}`></script> --> <!-- TODO UPDATE GOOGLE ANALYTICS ID -->
+		<!--  !fix -->
+		<!-- <script type="text/partytown" async src={`https://www.googletagmanager.com/gtag/js?id=${GOOGLE_ANALYTICS_ID}`} /> -->
 		<script type="text/partytown">
 			window.dataLayer = window.dataLayer || [];
 			function gtag(){dataLayer.push(arguments);}
@@ -42,7 +44,7 @@ const GOOGLE_ANALYTICS_ID = 'G-XXXXXXXXXX'
 		<link rel="canonical" href={Astro.url.href} />
 		<link rel="sitemap" href="/sitemap-index.xml" />
 
-		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<!-- <link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" 
 			rel="preload" as="style"
@@ -50,7 +52,12 @@ const GOOGLE_ANALYTICS_ID = 'G-XXXXXXXXXX'
 		<noscript>
 			<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" 
 				rel="stylesheet" />
-		</noscript>
+		</noscript> -->
+
+		<link rel="preload" as="image" href="/images/home/hero.webp" />
+		<link rel="preload" as="image" href="/images/home/hero_mobile.webp" />
+		<link rel="preload" as="image" href="/images/home/hero_background_desktop.webp" />
+		<link rel="preload" as="image" href="/images/home/hero_background_mobile.webp" />
 	</head>
 	<body>
 		<Navbar currentPath={Astro.url.pathname} client:load />
