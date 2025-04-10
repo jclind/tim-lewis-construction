@@ -1,7 +1,8 @@
 import React from 'react'
 import styles from './Testimonials.module.scss'
 import {
-  testimonials,
+  getFeaturedTestimonials,
+  testimonialsData,
   type TestimonialType,
 } from '../../../assets/data/testimonialData'
 import { Quote, Star } from 'lucide-react'
@@ -32,18 +33,23 @@ const SingleTestimonial = ({
   )
 }
 
-const Testimonials = () => {
+const Testimonials = ({ showAll = false }: { showAll?: boolean }) => {
+  const testimonialsToShow: TestimonialType[] = showAll
+    ? testimonialsData
+    : getFeaturedTestimonials()
   return (
     <div className={styles.Testimonials}>
       <div className='page__inner'>
         <div className={styles.content}>
-          <div className={styles.top}>
-            <div className={styles.subtitle}>TESTIMONIALS</div>
-            <h1 className='section-title'>What Our Clients Say</h1>
-          </div>
+          {!showAll && (
+            <div className={styles.top}>
+              <div className={styles.subtitle}>TESTIMONIALS</div>
+              <h1 className='section-title'>What Our Clients Say</h1>
+            </div>
+          )}
           <div className={styles.testimonials_list}>
-            {testimonials.map((testimonial, index) => (
-              <SingleTestimonial key={index} testimonial={testimonial} />
+            {testimonialsToShow.map((t, index) => (
+              <SingleTestimonial key={index} testimonial={t} />
             ))}
           </div>
         </div>

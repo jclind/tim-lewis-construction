@@ -48,6 +48,10 @@ export const projectsData = [
         src: '/images/projects/deck_addition_1/7.webp',
         alt: 'Wooden deck addition on a backyard home progress',
       },
+      {
+        src: '/images/projects/deck_addition_1/8.webp',
+        alt: 'Wooden deck addition on a backyard home progress',
+      },
     ],
     isFeatured: true,
   },
@@ -95,6 +99,10 @@ export const projectsData = [
     projectImgs: [
       {
         src: '/images/projects/basement_finishing_1/cover.webp',
+        alt: 'Modern finished basement progress',
+      },
+      {
+        src: '/images/projects/basement_finishing_1/2.webp',
         alt: 'Modern finished basement progress',
       },
     ],

@@ -1,0 +1,25 @@
+---
+import Layout from '../layouts/Layout.astro';
+import '../styles/global.scss';
+import CallToAction from '../components/Layout/CallToAction';
+import DefaultHero from '../components/Layout/DefaultHero';
+import Testimonials from '../components/Layout/Testimonials';
+
+const pageData = {
+  title: 'Testimonials | Tim Lewis Construction',
+  description: 'Hear what Pittsburgh-area homeowners are saying about Tim Lewis Construction. Our clients from Fox Chapel to McCandless share their experiences with our trusted home renovation and remodeling services.',
+}
+const heroData = {
+  title: "Testimonials",
+  description: "Homeowners across the Pittsburgh area trust Tim Lewis Construction for their renovation projects. Read what our clients have to say about their experience, craftsmanship, and results."
+};
+---
+
+<Layout title={pageData.title} description={pageData.description}>
+  <DefaultHero 
+    title={heroData.title} 
+    description={heroData.description}
+  />
+  <Testimonials showAll />
+  <CallToAction />
+</Layout>
