@@ -101,6 +101,10 @@ export const projectsData = [
         src: '/images/projects/basement_finishing_1/cover.webp',
         alt: 'Modern finished basement progress',
       },
+      {
+        src: '/images/projects/basement_finishing_1/2.webp',
+        alt: 'Modern finished basement progress',
+      },
     ],
     isFeatured: true,
   },
