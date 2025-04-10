@@ -14,7 +14,12 @@ const PageNotFound = () => {
           <div className={styles.content}>
             <h1>Page Not Found</h1>
             <p>The page you are looking for does not exist.</p>
-            <ButtonLink link='/' text='&larr; Back Home' size='large' />
+            <ButtonLink
+              link='/'
+              text='&larr; Back Home'
+              size='large'
+              color='secondary'
+            />
           </div>
         </div>
       </div>

@@ -30,7 +30,7 @@ const Navbar = ({ currentPath }: NavbarProps) => {
               key={link.path}
               href={link.path}
               className={`${styles.link} ${
-                currentPath === link.path ? styles.active : ''
+                currentPath == link.path ? styles.active : ''
               }`}
             >
               {link.title}
