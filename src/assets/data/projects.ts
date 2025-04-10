@@ -48,6 +48,10 @@ export const projectsData = [
         src: '/images/projects/deck_addition_1/7.webp',
         alt: 'Wooden deck addition on a backyard home progress',
       },
+      {
+        src: '/images/projects/deck_addition_1/8.webp',
+        alt: 'Wooden deck addition on a backyard home progress',
+      },
     ],
     isFeatured: true,
   },
