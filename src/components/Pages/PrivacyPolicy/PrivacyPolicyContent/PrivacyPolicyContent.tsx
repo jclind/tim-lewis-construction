@@ -554,7 +554,6 @@ const PrivacyPolicyContent = () => {
                   constructioncellist@gmail.com
                 </a>
               </p>
-              <p>Generated using Free Privacy Policy Generator</p>
             </section>
           </div>
         </div>
