@@ -18,7 +18,7 @@ const SingleTestimonial = ({
       <div className={styles.quote_icon}>
         <Quote fill='var(--primary-accent)' strokeWidth={1} />
       </div>
-      <p className={styles.text}>{text}</p>
+      <p className={styles.text} dangerouslySetInnerHTML={{ __html: text }}></p>
       <div className={styles.bottom}>
         <p className={styles.name}>{name}</p>
         <div className={styles.rating}>

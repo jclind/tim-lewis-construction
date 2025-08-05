@@ -56,9 +56,11 @@
   }
   p {
     text-align: left;
+    font-size: $fs-xs;
+    line-height: 1.6;
   }
   p.text {
-    height: 160px;
+    min-height: 160px;
   }
 
   .bottom {
