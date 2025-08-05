@@ -61,6 +61,7 @@
   }
   p.text {
     min-height: 160px;
+    margin-bottom: auto;
   }
 
   .bottom {
@@ -70,8 +71,21 @@
     border-top: 1px solid $border-color;
     padding-top: $gap-medium;
     p.name {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
       font-weight: 600;
-      font-size: $fs-medium;
+      font-size: $fs-small;
+      height: 22px;
+
+      @media (max-width: 800px) {
+        font-size: $fs-small;
+      }
+      span {
+        font-size: $fs-xxs;
+        color: $secondary-text;
+        font-weight: 400;
+      }
     }
     .rating {
       display: flex;

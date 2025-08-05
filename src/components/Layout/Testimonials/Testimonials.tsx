@@ -20,7 +20,10 @@ const SingleTestimonial = ({
       </div>
       <p className={styles.text} dangerouslySetInnerHTML={{ __html: text }}></p>
       <div className={styles.bottom}>
-        <p className={styles.name}>{name}</p>
+        <p
+          className={styles.name}
+          dangerouslySetInnerHTML={{ __html: name }}
+        ></p>
         <div className={styles.rating}>
           {Array.from({ length: rating }, (_, i) => (
             <span key={i} className={styles.star}>

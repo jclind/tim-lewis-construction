@@ -25,7 +25,7 @@ export const testimonialsData: TestimonialType[] = [
     isFeatured: true,
   },
   {
-    name: 'Elizabeth Decarvalho - wife and mother of three ',
+    name: 'Elizabeth Decarvalho <span>(wife and mother of three)</span>',
     rating: 5,
     text: 'If you’re looking for quality, efficiency and honest work, I would highly recommend Tim’s skills and expertise. He did a wood deck and staircase for us, and I don’t think it could have been done better!',
     isFeatured: false,
