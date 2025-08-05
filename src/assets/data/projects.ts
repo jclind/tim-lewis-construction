@@ -12,6 +12,15 @@ export interface ProjectType {
   isFeatured: boolean
 }
 
+const genProjectSrcs = (limit: number, alt: string, projectName: string) => {
+  const imgs: { src: string; alt: string }[] = []
+  for (let i = 1; i <= limit; i++) {
+    const currImgPath = `/images/projects/${projectName}/${i}.webp`
+    imgs.push({ src: currImgPath, alt })
+  }
+  return imgs
+}
+
 export const projectsData = [
   {
     id: 'deck-addition',
@@ -19,40 +28,7 @@ export const projectsData = [
     coverImgSrc: '/images/projects/deck_addition/cover.webp',
     coverImgSrcMobile: '/images/projects/deck_addition/cover_mobile.webp',
     coverImgAlt: 'Wooden deck addition on a backyard home',
-    projectImgs: [
-      {
-        src: '/images/projects/deck_addition/2.webp',
-        alt: 'Wooden deck addition on a backyard home progress',
-      },
-      {
-        src: '/images/projects/deck_addition/1.webp',
-        alt: 'Wooden deck addition on a backyard home progress',
-      },
-      {
-        src: '/images/projects/deck_addition/3.webp',
-        alt: 'Wooden deck addition on a backyard home progress',
-      },
-      {
-        src: '/images/projects/deck_addition/4.webp',
-        alt: 'Wooden deck addition on a backyard home progress',
-      },
-      {
-        src: '/images/projects/deck_addition/5.webp',
-        alt: 'Wooden deck addition on a backyard home progress',
-      },
-      {
-        src: '/images/projects/deck_addition/6.webp',
-        alt: 'Wooden deck addition on a backyard home progress',
-      },
-      {
-        src: '/images/projects/deck_addition/7.webp',
-        alt: 'Wooden deck addition on a backyard home progress',
-      },
-      {
-        src: '/images/projects/deck_addition/8.webp',
-        alt: 'Wooden deck addition on a backyard home progress',
-      },
-    ],
+    projectImgs: genProjectSrcs(18, 'testing', 'deck_addition'),
     isFeatured: true,
   },
   {
