@@ -217,3 +217,7 @@ a[href^='tel'] {
   color: $primary-text; /* Or any color that contrasts with the background */
   text-decoration: none; /* Optional: removes underline */
 }
+
+.gap-large {
+  margin: $gap-large 0;
+}

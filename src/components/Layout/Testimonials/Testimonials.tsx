@@ -6,6 +6,7 @@ import {
   type TestimonialType,
 } from '../../../assets/data/testimonialData'
 import { Quote, Star } from 'lucide-react'
+import { ButtonLink } from '../../Common/ButtonLink'
 
 const SingleTestimonial = ({
   testimonial,
@@ -55,6 +56,16 @@ const Testimonials = ({ showAll = false }: { showAll?: boolean }) => {
               <SingleTestimonial key={index} testimonial={t} />
             ))}
           </div>
+          {!showAll && (
+            <>
+              <ButtonLink
+                text='View All Testimonials'
+                link='/testimonials'
+                color='secondary'
+              />
+              <div className='gap-large'></div>
+            </>
+          )}
         </div>
       </div>
     </div>
