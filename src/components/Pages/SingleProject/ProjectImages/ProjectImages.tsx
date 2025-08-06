@@ -31,7 +31,7 @@ const ProjectImages = ({ project }: { project: ProjectType }) => {
       <div className='page__inner'>
         <div className={styles.content}>
           <h1 className='page-title'>{project.title}</h1>
-          <p>Project Images:</p>
+          <p>Images from past projects:</p>
           <div className={styles.images_container}>
             <div className={styles.left_row}>
               {project.projectImgs.map((imgData, index) => {
