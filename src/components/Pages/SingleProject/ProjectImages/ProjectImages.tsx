@@ -11,15 +11,19 @@ const ImgComponent = ({
 }: {
   imgData: ProjectImgType
   index: number
-}) => (
-  <div className={`${styles.image} image`}>
-    <img
-      src={imgData.src}
-      alt={imgData.alt}
-      loading={index > 0 ? 'lazy' : 'eager'}
-    />
-  </div>
-)
+}) => {
+  console.log('IMGCOMPONENT DATA', imgData)
+
+  return (
+    <div className={`${styles.image} image`}>
+      <img
+        src={imgData.src}
+        alt={imgData.alt}
+        loading={index > 0 ? 'lazy' : 'eager'}
+      />
+    </div>
+  )
+}
 
 const ProjectImages = ({ project }: { project: ProjectType }) => {
   return (

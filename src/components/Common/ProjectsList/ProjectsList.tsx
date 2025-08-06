@@ -14,6 +14,7 @@ const ProjectsList = ({
   size?: 'regular' | 'large'
   lazy?: boolean
 }) => {
+  console.log('PROJECTS HERE:', projects)
   return (
     <div className={`${styles.projects} ${size}`}>
       {projects.map(project => (
