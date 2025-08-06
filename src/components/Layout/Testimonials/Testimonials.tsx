@@ -6,6 +6,7 @@ import {
   type TestimonialType,
 } from '../../../assets/data/testimonialData'
 import { Quote, Star } from 'lucide-react'
+import { ButtonLink } from '../../Common/ButtonLink'
 
 const SingleTestimonial = ({
   testimonial,
@@ -18,9 +19,12 @@ const SingleTestimonial = ({
       <div className={styles.quote_icon}>
         <Quote fill='var(--primary-accent)' strokeWidth={1} />
       </div>
-      <p className={styles.text}>{text}</p>
+      <p className={styles.text} dangerouslySetInnerHTML={{ __html: text }}></p>
       <div className={styles.bottom}>
-        <p className={styles.name}>{name}</p>
+        <p
+          className={styles.name}
+          dangerouslySetInnerHTML={{ __html: name }}
+        ></p>
         <div className={styles.rating}>
           {Array.from({ length: rating }, (_, i) => (
             <span key={i} className={styles.star}>
@@ -52,6 +56,16 @@ const Testimonials = ({ showAll = false }: { showAll?: boolean }) => {
               <SingleTestimonial key={index} testimonial={t} />
             ))}
           </div>
+          {!showAll && (
+            <>
+              <ButtonLink
+                text='View All Testimonials'
+                link='/testimonials'
+                color='secondary'
+              />
+              <div className='gap-large'></div>
+            </>
+          )}
         </div>
       </div>
     </div>
