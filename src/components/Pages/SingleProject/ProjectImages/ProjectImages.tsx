@@ -12,8 +12,6 @@ const ImgComponent = ({
   imgData: ProjectImgType
   index: number
 }) => {
-  console.log('IMGCOMPONENT DATA', imgData)
-
   return (
     <div className={`${styles.image} image`}>
       <img
