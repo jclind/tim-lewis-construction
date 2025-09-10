@@ -39,7 +39,7 @@ const ProjectsList = ({
             <h2>{project.title}</h2>
             <ArrowUpRight />
           </div>
-          <div className={styles.view_project}>View Project</div>
+          <div className={styles.view_project}>View All Images</div>
         </a>
       ))}
     </div>

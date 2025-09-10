@@ -11,15 +11,17 @@ const ImgComponent = ({
 }: {
   imgData: ProjectImgType
   index: number
-}) => (
-  <div className={`${styles.image} image`}>
-    <img
-      src={imgData.src}
-      alt={imgData.alt}
-      loading={index > 0 ? 'lazy' : 'eager'}
-    />
-  </div>
-)
+}) => {
+  return (
+    <div className={`${styles.image} image`}>
+      <img
+        src={imgData.src}
+        alt={imgData.alt}
+        loading={index > 0 ? 'lazy' : 'eager'}
+      />
+    </div>
+  )
+}
 
 const ProjectImages = ({ project }: { project: ProjectType }) => {
   return (
@@ -27,7 +29,7 @@ const ProjectImages = ({ project }: { project: ProjectType }) => {
       <div className='page__inner'>
         <div className={styles.content}>
           <h1 className='page-title'>{project.title}</h1>
-          <p>Project Images:</p>
+          <p>Images from past projects:</p>
           <div className={styles.images_container}>
             <div className={styles.left_row}>
               {project.projectImgs.map((imgData, index) => {
