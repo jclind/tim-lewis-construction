@@ -11,8 +11,7 @@ interface Props {
 }
 const { title = LEGAL_NAME, description = WEBSITE_DESCRIPTION } = Astro.props;
 const siteName = LEGAL_NAME
-const GOOGLE_ANALYTICS_ID = 'G-XBZY9GZGZE'
-
+const GOOGLE_ANALYTICS_ID = 'G-6WSZWTTVX6'
 ---
 
 
@@ -20,8 +19,7 @@ const GOOGLE_ANALYTICS_ID = 'G-XBZY9GZGZE'
 <!doctype html>
 <html lang="en">
 	<head>
-		<!--  !fix -->
-		<!-- <script type="text/partytown" async src={`https://www.googletagmanager.com/gtag/js?id=${GOOGLE_ANALYTICS_ID}`} /> -->
+		<script type="text/partytown" async src={`https://www.googletagmanager.com/gtag/js?id=${GOOGLE_ANALYTICS_ID}`}></script>
 		<script type="text/partytown">
 			window.dataLayer = window.dataLayer || [];
 			function gtag(){dataLayer.push(arguments);}
