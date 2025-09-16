@@ -44,7 +44,7 @@ body {
 
 p,
 li {
-  // line-height: 1.4;
+  line-height: 1.5;
   max-width: $max-width-paragraph;
   // letter-spacing: -0.5px;
   width: 100%;
@@ -216,4 +216,8 @@ img {
 a[href^='tel'] {
   color: $primary-text; /* Or any color that contrasts with the background */
   text-decoration: none; /* Optional: removes underline */
+}
+
+.gap-large {
+  margin: $gap-large 0;
 }

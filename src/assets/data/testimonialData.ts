@@ -24,6 +24,33 @@ export const testimonialsData: TestimonialType[] = [
     text: 'I love TLC! He is very professional and finishes the job beautifully! His finish work is pristine. He opened up our small bathroom and made it larger and tiled a curbless shower! He put in a sky light in the shower and a larger window near the vanity for natural light. It’s gorgeous!',
     isFeatured: true,
   },
+  {
+    name: 'Elizabeth Decarvalho <span>(wife and mother of three)</span>',
+    rating: 5,
+    text: 'If you’re looking for quality, efficiency and honest work, I would highly recommend Tim’s skills and expertise. He did a wood deck and staircase for us, and I don’t think it could have been done better!',
+    isFeatured: false,
+  },
+  {
+    name: 'Mary Cay Burt',
+    rating: 5,
+    text: `TLC Construction is a business you can trust.
+Tim Lewis is reliable, honest and fair. He also is an excellent craftsman.
+He put in 2 new skylights for me and did an outstanding job.
+I highly recommend TLC Construction. Tim will not disappoint you.`,
+    isFeatured: false,
+  },
+  {
+    name: 'Patrick Lewis',
+    rating: 5,
+    text: `Tim was great. He’s helped now with two projects, a staircase banister and a bathroom tub and tile job. He was efficient, great to brainstorm solutions with, hard working, communicated and followed up well, finished in a timely manner, and importantly high quality professional work with attention to detail. Will be giving him more business in the future and highly recommend his services.`,
+    isFeatured: false,
+  },
+  {
+    name: 'Katie Lombardo ',
+    rating: 5,
+    text: `We needed a large job to be completed somewhat quickly, and were able to provide some of the labor. However this required professional oversight and Tim provided exactly that. He had an uncanny capacity to predict what time frame was needed, and was incredibly efficient in light of the time spent. His leadership was excellent, his attention to detail thorough and intuitive, and his friendly-professional demeanor refreshing… <br /><br />We considered his services well worth the competitive investment! And we highly recommend not only his work but his solid work ethic, flexibility and integrity.`,
+    isFeatured: false,
+  },
 ]
 
 export const getFeaturedTestimonials = () => {
