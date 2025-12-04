@@ -25,13 +25,7 @@ const Hero = () => {
           </div>
           <div className={styles.bottom_text}>
             <p className='section-description'>
-              From decks and bathrooms to windows and doors, Tim Lewis
-              Construction brings expert craftsmanship and attention to detail
-              to every home renovation project. Proudly serving{' '}
-              <strong>Fox Chapel, McCandless</strong>, and the{' '}
-              <strong>greater Pittsburgh area</strong> , we’ll help you create a
-              space you love—whether you’re upgrading, repairing, or dreaming
-              big.
+              Decks, bathrooms, windows, doors, you name it. Tim Lewis Construction handles home renovations across <strong>Fox Chapel, McCandless</strong>, and the <strong>greater Pittsburgh area</strong>. We focus on quality work and making sure you're happy with the results. Got a project in mind or just need something fixed? Let's talk.
             </p>
             <ButtonLink
               text='Get A Free Estimate'
